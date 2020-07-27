@@ -8,9 +8,86 @@ To start the schematic we need to label components.
 
 With the amplifier oriented upright and when you are facing the front of the amplifier, going from left to right, and then front to back.
 
-TODO: schematic
+### Amplifier Channel Schematic
 
-TODO: table of components
+This is the left channel.  The right channel is a mirror image of this for physical component layout, and has the same values and circuit.
+
+![Amplifier Channel](amp_channel_schematic.png)
+
+### Power Supply
+
+![Power Supply](power_supply_schematic.png)
+
+### Component List
+
+| Part | Value | Desc |
+|:-----|:------|:-----|
+| V1   | 6H8C  | Left channel preamp tube |
+| V2   | 6P1   | Left channel power tube - front (1 of 2) |
+| V3   | 6P1   | Left channel power tube - rear (2 of 2) |
+| V4   | 5Z4P  | Rectifier tube |
+| V5   | 6P1   | Right channel power tube - front (1/2) |
+| V6   | 6P1   | Right channel power tube - read (2/2) |
+| V7   | 6H8C  | Right channel preamp tube |
+| S1   | EG4810-ND | Power switch (Front) |
+| RV1  | Dual potentiometer | Volume knob |
+| J1   | Q203-ND | Nema power connector with fuze |
+| F1   |       | Fuze (in the power connector) |
+| J2   | 314-1205-ND | Left channel 8 ohm output |
+| J3   | 314-1206-ND | Left channel 0 ohm (gnd) |
+| J4   | 314-1206-ND | Right channel 0 ohm (gnd) |
+| J5   | 314-1205-ND | Right channel 8 ohm output |
+| J6   SC2440-ND | Right channel input |
+| J7 | SC2440-ND | Left channel input |
+| T1 | HM4585-ND | Left channel output transformer PRI:291 ohms |
+| T2 | HM5045-ND | Power transformer |
+| T3 | HM4585-ND | Right channel output transformer |
+| L1 |  | Power supply choke (inside chassis) |
+| C1 | 220uF; 50V | Power tube cathode bypass capacitor |
+| C2 | BC220nK400 | Coupling between preamp and power amp. 0.220uF ; 400V?  I replaced these with 0.1uF |
+| C3 | 220K400 | |
+| C4 | 100uF; 25V | |
+| C5 | 22uF; 250V | |
+| C6 | 150uF; 450V | |
+| C7 | 150uF; 450V | |
+| C8 | 22uF; 450V | |
+| C9 | 100uF; 25V | |
+| C10 | BC220nK400 | (replaced with 0.1uF; 450V) |
+| C11 | 220K400 | |
+| C12 | 220uF; 50V | |
+| R1 | 270 ohm; 3 watts | Cathode bypass resistor, left channel |
+| R2 | 470K; 2 watts | |
+| R3 | 2.2K; 2 watts | |
+| R4 | 30K; 2 watts | |
+| R5 | 470K; 2 watts | |
+| R6 | 1.5K; 2 watts | |
+| R7 | 1.5K; 2 watts | |
+| R8 | 2.2K; 2 watts | |
+| R9 | 40K; 2 watts | |
+| R10 | 470K; 2 watts | |
+| R11 | 270 ohms; 3 watts | Cathode bypass resistor, right channel |
+| R12 | 470K; 2 watts | |
+| R13 | 1M; 1 watt | (On socket of V1) |
+| R14 | 100 ohms; 1 watt | (On socket of V2) |
+| R15 | 100 ohms; 1 watt | (On socket of V3) |
+| R16 | 100 ohms; 1 watt | (On socket of V5) |
+| R17 | 100 ohms; 1 watt | (On socket of V6) |
+| R18 | 1M; 1 watt | (On socker of V7) |
+| M1 | | (VU meter for left channel, on front) |
+| M2 | | (VU meter for right channel, on front) |
+| R19 | 15K; 1/2 watt | (Behind M1) |
+| R20 | 15K; 1/2 watt | (Behind M2) |
+| C13 | 2uF; 50V | (Behind M1) |
+| C14 | 2uF; 50V | (Behind M2) |
+| C15 | 10uF; 50V | (Behind M1) |
+| C16 | 10uF; 50V | (Behind M2) |
+| D1 | 1N914 | (On J3) |
+| D2 | 1N914 | (On wire to M1, after D1) |
+| D3 | 1N914 | (On J4) |
+| D4 | 19N14 | (On wire to M2, after D2) |
+| LED1 | blue | On front |
+| R21 |  | Inline on wires to LED1 |
+| RV1 |  | (On front) Dual potentiometer volume knob |
 
 ### Original Schematic Observations
 
@@ -77,7 +154,47 @@ So we could probably get away with a single EL84 per side instead of the two 6P1
 * https://www.radiomuseum.org/tubes/tube_6p1p.html
 * https://www.jj-electronic.com/en/el84-6bq5
 
-TODO: table
+### 6P1 Pinout
+
+| Pin | Function |
+|:----|:---------|
+| 1   | a    |
+| 2   | g2   |
+| 3   | k,g3 |
+| 4   | f    |
+| 5   | f    |
+| 6   | a    |
+| 7   | g1   |
+| 8   | k,g3 |
+| 9   | g2   |
+
+### EL84 Pinout
+
+| Pin | Function |
+|:----|:---------|
+| 1   | |
+| 2   | g1 |
+| 3   | k,g3 |
+| 4   | f |
+| 5   | f |
+| 6   | i.c. |
+| 7   | a |
+| 8   | i.c. |
+| 9   | g2 |
+
+### Pin Mapping from 6P1 to EL84 Conversion
+
+| 6P1 | EL84 | Function |
+|:----|:-----|:---------|
+| 1   | 7    | a |
+| 2   | 9    | g2 |
+| 3   | 3    | k,g3 |
+| 4   | 4    | f |
+| 5   | 5    | f |
+| 6   | 7    | a |
+| 7   | 2    | g1 |
+| 8   | 3    | k,g3 |
+| 9   | 9    | g2 |
 
 Since the amplifier already has 9 pin sockets, I can just use the sockets in the chassis.
 Also since I only need 1 EL84 tube for what was 2 6P1 tubes before, I can consume and re purpose the 2nd 9 pin socket that was for the 2nd 6P1 tube per channel, to be used for the preamp tube (see below). Because I need to de-populate the 8 pin socket that was used for the 6H8C tube before.
@@ -103,7 +220,45 @@ The 6H8C is apparently equivalent to a 6SN7 . I can only find the 6H8C on aliexp
 * https://www.jj-electronic.com/images/stories/product/preamplifying_tubes/6sn7/6SN7.pdf
 * https://www.jj-electronic.com/en/ecc82-12au7
 
-TODO: table
+### 6H8C Pinout
+
+| Pin | Function |
+|:--|:--|
+| 1 | g2 |
+| 2 | a2 |
+| 3 | k2 |
+| 4 | g1 |
+| 5 | a1 |
+| 6 | k1 |
+| 7 | f |
+| 8 | f |
+
+### 12AX7 Pinout
+
+| Pin | Function |
+|:--|:--|
+| 1 | a1 |
+| 2 | g1 |
+| 3 | k1 |
+| 4 | f |
+| 5 | f |
+| 6 | a2 |
+| 7 | g2 |
+| 8 | k2 |
+| 9 | fc |
+
+### Pin Mapping from 6H8C to 12AX7 Conversion
+
+| 6H8C | 12AX7 | Function |
+|:--|:--|:--|
+| 1 | 7 | g2 |
+| 2 | 6 | a2 |
+| 3 | 8 | k2 |
+| 4 | 2 | g1 |
+| 5 | 1 | a1 |
+| 6 | 3 | k1 |
+| 7 | 9 | fc |
+| 8 | 4,5 | f |
 
 2020-07-21
 
