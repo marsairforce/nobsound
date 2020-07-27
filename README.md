@@ -56,4 +56,6 @@ It does not look as cool without the bunches of interestingly shaped tubes, but 
 
 ## Second Wave of Modification
 
-2020-07-24:  I went ahead and ordered all around new resistors and capacitors from Digikey. I wanted some connectors for playing with Amateur radio stuff, and needed to pad an order to > $100. Waiting over the weekend for the parts to arrive.
+2020-07-24:  I went ahead and ordered all around new electrolytic capacitors from Digikey. I wanted some connectors for playing with Amateur radio stuff, and needed to pad an order to > $100. Waiting over the weekend for the parts to arrive.
+
+2020-07-27: The parts arrived. Installed the new capacitors and re-assembled the amplifier.

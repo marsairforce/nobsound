@@ -379,34 +379,17 @@ AR Path="/5F20E026" Ref="C?"  Part="1"
 AR Path="/5F1F04D2/5F20E026" Ref="C?"  Part="1" 
 AR Path="/5F200EB9/5F20E026" Ref="C12"  Part="1" 
 F 0 "C12" H 7468 4041 50  0000 L CNN
-F 1 "220uF" H 7468 3950 50  0000 L CNN
+F 1 "1000uF" H 7468 3950 50  0000 L CNN
 F 2 "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm" H 7388 3800 50  0001 C CNN
 F 3 "~" H 7350 3950 50  0001 C CNN
 F 4 "50V" H 7468 3859 50  0000 L CNN "Voltage"
 	1    7350 3950
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:R R?
-U 1 1 5F20E02D
-P 7000 3950
-AR Path="/5F20E02D" Ref="R?"  Part="1" 
-AR Path="/5F1F04D2/5F20E02D" Ref="R?"  Part="1" 
-AR Path="/5F200EB9/5F20E02D" Ref="R11"  Part="1" 
-F 0 "R11" H 7070 3996 50  0000 L CNN
-F 1 "270" H 7070 3905 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P20.32mm_Horizontal" V 6930 3950 50  0001 C CNN
-F 3 "~" H 7000 3950 50  0001 C CNN
-F 4 "5W" H 7000 3950 50  0001 C CNN "Power"
-	1    7000 3950
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	7200 3500 7200 3700
 Wire Wire Line
 	7200 3700 7000 3700
-Wire Wire Line
-	7000 3700 7000 3800
 Wire Wire Line
 	7200 3700 7350 3700
 Wire Wire Line
@@ -479,6 +462,23 @@ F 1 "R_POT_Dual_Separate" H 3830 4305 50  0000 R CNN
 F 2 "" H 3900 4350 50  0001 C CNN
 F 3 "~" H 3900 4350 50  0001 C CNN
 	2    3900 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7000 3700 7000 3800
+$Comp
+L Device:R R?
+U 1 1 5F20E02D
+P 7000 3950
+AR Path="/5F20E02D" Ref="R?"  Part="1" 
+AR Path="/5F1F04D2/5F20E02D" Ref="R?"  Part="1" 
+AR Path="/5F200EB9/5F20E02D" Ref="R11"  Part="1" 
+F 0 "R11" H 7070 3996 50  0000 L CNN
+F 1 "270" H 7070 3905 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P20.32mm_Horizontal" V 6930 3950 50  0001 C CNN
+F 3 "~" H 7000 3950 50  0001 C CNN
+F 4 "5W" H 7100 3800 50  0000 C CNN "Power"
+	1    7000 3950
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC

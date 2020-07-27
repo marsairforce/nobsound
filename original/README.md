@@ -123,9 +123,6 @@ Plate to cathode voltage: 263V
 
 So according to https://robrobinette.com/Tube_Bias_Calculator.htm
 
-I need to change the 270 ohm resistor for a 470 ohm resistor to get the correct bias of 40mA for an EL84 The one we have now is basically half of what we need.
-
-I don’t have a 440 ohm 2 watt resistor. But I have 470 ohm 1 watt resistors. I can make a pair of two in series to get a 2 w resistor.But I don’t really feel like that. Lots of space I don’t have too.
 
 Measure the resistance on the primaries of the output transformers.  T1 (L):291 T3 (R):288
 So assume plate to cathode voltage is the same, 263. The left channel would have .90A and the right channel would have .91A
@@ -197,21 +194,9 @@ So we could probably get away with a single EL84 per side instead of the two 6P1
 | 9   | 9    | g2 |
 
 Since the amplifier already has 9 pin sockets, I can just use the sockets in the chassis.
+
 Also since I only need 1 EL84 tube for what was 2 6P1 tubes before, I can consume and re purpose the 2nd 9 pin socket that was for the 2nd 6P1 tube per channel, to be used for the preamp tube (see below). Because I need to de-populate the 8 pin socket that was used for the 6H8C tube before.
 
-So based on the calculations (in the circuit analysis), to use an EL84, I would want the current through the cathode resistor to be about 40mA.  The resistor is 270 ohms, so I am looking for a voltage drop of about V=I*R or 0.04*270 or about 10V.
-
-In practise plugging in an EL84 and testing it out I see it stabilized around 11.75V. Or about 43mA. This is perfect and exactly where we would like it to be.
-
-Reading on https://www.18watt.com/viewtopic.php?t=12875 , the values we have is the values we should use. Ok then.
-
-Wire in the amp and do a test. Well. it seems to work. Let’s do the right channel.
-It sounds ok.
-
-I keep reading and finding schematics where the screen resistor should go to the B+, not the output transformer the plate goes to. This amp seems to be wired incorrectly then?
-
-Experiment to wire these to the B+. I only have the 100 ohm screen bypass resistors. I think it should be 1K.
-But when I do this, a terrible hum sound and buzzing. Ok, put that back. It might be the hum was because the resistor was 10x too low from what is recommended in this configuration? This is something I would like to understand later.
 
 ## Preamp Tubes
 
