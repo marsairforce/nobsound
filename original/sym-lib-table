@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name local)(type Legacy)(uri /home/thein/kicad/library/local.lib)(options "")(descr ""))
+  (lib (name nobsound-audio-amplifier-rescue)(type Legacy)(uri "${KIPRJMOD}/nobsound audio amplifier-rescue.lib")(options "")(descr ""))
 )

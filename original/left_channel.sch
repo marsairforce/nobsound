@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L local:AudioTxfmr T?
+L nobsound-audio-amplifier-rescue:AudioTxfmr-local T?
 U 1 1 5F1FED34
 P 7350 2400
 AR Path="/5F1FED34" Ref="T?"  Part="1" 
@@ -85,7 +85,7 @@ F 3 "~" H 4800 2000 50  0001 C CNN
 $EndComp
 Connection ~ 4300 1850
 $Comp
-L local:6H8C V?
+L nobsound-audio-amplifier-rescue:6H8C-local V?
 U 1 1 5F1FED56
 P 4800 3100
 AR Path="/5F1FED56" Ref="V?"  Part="1" 
@@ -115,27 +115,27 @@ Wire Wire Line
 $Comp
 L Device:R R?
 U 1 1 5F1FED63
-P 4550 2550
+P 6500 3450
 AR Path="/5F1FED63" Ref="R?"  Part="1" 
 AR Path="/5F1F04D2/5F1FED63" Ref="R2"  Part="1" 
-F 0 "R2" V 4343 2550 50  0000 C CNN
-F 1 "470K" V 4434 2550 50  0000 C CNN
-F 2 "" V 4480 2550 50  0001 C CNN
-F 3 "~" H 4550 2550 50  0001 C CNN
-	1    4550 2550
-	0    1    1    0   
+F 0 "R2" V 6293 3450 50  0000 C CNN
+F 1 "470K" V 6384 3450 50  0000 C CNN
+F 2 "" V 6430 3450 50  0001 C CNN
+F 3 "~" H 6500 3450 50  0001 C CNN
+	1    6500 3450
+	-1   0    0    1   
 $EndComp
 $Comp
 L Device:C C?
 U 1 1 5F1FED69
-P 4300 2900
+P 3950 3300
 AR Path="/5F1FED69" Ref="C?"  Part="1" 
 AR Path="/5F1F04D2/5F1FED69" Ref="C3"  Part="1" 
-F 0 "C3" H 3850 2950 50  0000 L CNN
-F 1 "220K400" H 3850 2850 50  0000 L CNN
-F 2 "" H 4338 2750 50  0001 C CNN
-F 3 "~" H 4300 2900 50  0001 C CNN
-	1    4300 2900
+F 0 "C3" H 3500 3350 50  0000 L CNN
+F 1 "220K400" H 3500 3250 50  0000 L CNN
+F 2 "" H 3988 3150 50  0001 C CNN
+F 3 "~" H 3950 3300 50  0001 C CNN
+	1    3950 3300
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -154,7 +154,7 @@ F 3 "~" H 4300 3400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L local:6H8C V?
+L nobsound-audio-amplifier-rescue:6H8C-local V?
 U 2 1 5F1FED76
 P 4800 4450
 AR Path="/5F1FED76" Ref="V?"  Part="2" 
@@ -313,28 +313,12 @@ Connection ~ 4850 5900
 Wire Wire Line
 	4850 5900 5200 5900
 Wire Wire Line
-	4300 3050 4300 3150
-Wire Wire Line
 	4800 4000 4300 4000
 Connection ~ 4800 4000
 Wire Wire Line
 	4450 3150 4300 3150
-Connection ~ 4300 3150
 Wire Wire Line
 	4300 3150 4300 3250
-Wire Wire Line
-	5300 2350 5400 2350
-Wire Wire Line
-	4400 2550 4300 2550
-Wire Wire Line
-	4300 2550 4300 2750
-Wire Wire Line
-	4700 2550 5400 2550
-Wire Wire Line
-	5400 2550 5400 2350
-Connection ~ 5400 2350
-Wire Wire Line
-	5400 2350 5800 2350
 NoConn ~ 7650 2200
 $Comp
 L Connector:Screw_Terminal_01x01 J?
@@ -367,7 +351,7 @@ Wire Wire Line
 Wire Wire Line
 	7750 2000 7650 2000
 $Comp
-L local:6P1 V2,V?
+L nobsound-audio-amplifier-rescue:6P1-local V2,V?
 U 1 1 5F1FEDE2
 P 7050 3100
 AR Path="/5F1FEDE2" Ref="V2,V?"  Part="1" 
@@ -380,7 +364,7 @@ F 3 "" H 7070 3000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6700 3300 5800 3300
+	6700 3300 6500 3300
 Wire Wire Line
 	5800 3300 5800 2350
 Text Label 6950 3650 2    50   ~ 0
@@ -469,4 +453,38 @@ Wire Wire Line
 Connection ~ 3650 1850
 Wire Wire Line
 	3650 1850 3550 1850
+Connection ~ 6500 3300
+Wire Wire Line
+	6500 3300 5800 3300
+Wire Wire Line
+	5300 2350 5800 2350
+Wire Wire Line
+	4300 3150 3950 3150
+Connection ~ 4300 3150
+$Comp
+L power:Earth #PWR?
+U 1 1 5F60AA3D
+P 3950 3550
+F 0 "#PWR?" H 3950 3300 50  0001 C CNN
+F 1 "Earth" H 3950 3400 50  0001 C CNN
+F 2 "" H 3950 3550 50  0001 C CNN
+F 3 "~" H 3950 3550 50  0001 C CNN
+	1    3950 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 3550 3950 3450
+$Comp
+L power:Earth #PWR?
+U 1 1 5F60D850
+P 6500 3700
+F 0 "#PWR?" H 6500 3450 50  0001 C CNN
+F 1 "Earth" H 6500 3550 50  0001 C CNN
+F 2 "" H 6500 3700 50  0001 C CNN
+F 3 "~" H 6500 3700 50  0001 C CNN
+	1    6500 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 3600 6500 3700
 $EndSCHEMATC

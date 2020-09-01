@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 5
+Sheet 2 4
 Title "Nobsound Tube Amplifier Power Supply"
 Date "2020-07-20"
 Rev "1"
@@ -347,4 +347,88 @@ F 3 "~" H 8150 4000 50  0001 C CNN
 	1    8150 4000
 	1    0    0    -1  
 $EndComp
+$Comp
+L dk_DC-DC-Converters:V7805-500 U1
+U 1 1 5F4F76F6
+P 8000 5050
+F 0 "U1" H 8000 5437 60  0000 C CNN
+F 1 "V7805-500" H 8000 5331 60  0000 C CNN
+F 2 "digikey-footprints:3-SIP_Module_V7805-500" H 8200 5250 60  0001 L CNN
+F 3 "https://www.cui.com/product/resource/digikeypdf/v78-500.pdf" H 8200 5350 60  0001 L CNN
+F 4 "102-1709-ND" H 8200 5450 60  0001 L CNN "Digi-Key_PN"
+F 5 "V7805-500" H 8200 5550 60  0001 L CNN "MPN"
+F 6 "Power Supplies - Board Mount" H 8200 5650 60  0001 L CNN "Category"
+F 7 "DC DC Converters" H 8200 5750 60  0001 L CNN "Family"
+F 8 "https://www.cui.com/product/resource/digikeypdf/v78-500.pdf" H 8200 5850 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/cui-inc/V7805-500/102-1709-ND/1828602" H 8200 5950 60  0001 L CNN "DK_Detail_Page"
+F 10 "DC DC CONVERTER 5V 2.5W" H 8200 6050 60  0001 L CNN "Description"
+F 11 "CUI Inc." H 8200 6150 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 8200 6250 60  0001 L CNN "Status"
+	1    8000 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C13
+U 1 1 5F4FA3D7
+P 7500 5100
+F 0 "C13" H 7618 5146 50  0000 L CNN
+F 1 "CP" H 7618 5055 50  0000 L CNN
+F 2 "" H 7538 4950 50  0001 C CNN
+F 3 "~" H 7500 5100 50  0001 C CNN
+	1    7500 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C14
+U 1 1 5F4FACD4
+P 8500 5100
+F 0 "C14" H 8618 5146 50  0000 L CNN
+F 1 "CP" H 8618 5055 50  0000 L CNN
+F 2 "" H 8538 4950 50  0001 C CNN
+F 3 "~" H 8500 5100 50  0001 C CNN
+	1    8500 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7100 4450 7100 4650
+Wire Wire Line
+	6800 4950 6750 4950
+Wire Wire Line
+	7400 4950 7500 4950
+Wire Wire Line
+	7500 4950 7600 4950
+Connection ~ 7500 4950
+Wire Wire Line
+	8400 4950 8500 4950
+Text Label 8500 4950 0    50   ~ 0
++5V
+Wire Wire Line
+	8500 5400 8500 5250
+Wire Wire Line
+	8000 5400 8000 5350
+Wire Wire Line
+	7500 5400 7500 5250
+$Comp
+L Device:D_Bridge_+AA- D1
+U 1 1 5F4F6AF1
+P 7100 4950
+F 0 "D1" H 7300 5250 50  0000 L CNN
+F 1 "D_Bridge_+AA-" H 7300 5150 50  0000 L CNN
+F 2 "" H 7100 4950 50  0001 C CNN
+F 3 "~" H 7100 4950 50  0001 C CNN
+	1    7100 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6750 5400 7500 5400
+Wire Wire Line
+	6750 4950 6750 5400
+Wire Wire Line
+	7500 5400 8000 5400
+Connection ~ 7500 5400
+Wire Wire Line
+	8000 5400 8500 5400
+Connection ~ 8000 5400
+Text Label 8500 5400 0    50   ~ 0
+0pv
 $EndSCHEMATC

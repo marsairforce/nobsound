@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L local:5Z4P V3
+L nobsound-audio-amplifier-rescue:5Z4P-local V3
 U 1 1 5F152C6F
 P 6600 4000
 F 0 "V3" H 6828 4046 50  0000 L CNN
@@ -25,7 +25,7 @@ F 3 "" H 6850 4000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L local:PwrTxfmr T2
+L nobsound-audio-amplifier-rescue:PwrTxfmr-local T2
 U 1 1 5F15D5D5
 P 5300 4100
 F 0 "T2" H 5300 4925 50  0000 C CNN
@@ -36,7 +36,7 @@ F 3 "" H 5550 4750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L local:SW_SPST S1
+L nobsound-audio-amplifier-rescue:SW_SPST-local S1
 U 1 1 5F164E42
 P 4600 3800
 F 0 "S1" H 4600 4047 60  0000 C CNN
@@ -47,7 +47,7 @@ F 3 "" H 4500 3750 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L local:Conn_IEC_Power J1
+L nobsound-audio-amplifier-rescue:Conn_IEC_Power-local J1
 U 1 1 5F1757DE
 P 3800 3900
 F 0 "J1" H 3681 4225 50  0000 C CNN

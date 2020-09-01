@@ -95,6 +95,31 @@ I would like to find a more technical calculation for this. So far the sounds do
 
 * Replaced the charred looking 270 ohm resistors with new 270 ohm resistors. Though I ordered 3W kind, I think the old ones may have been 5W. Doh. Well. From the measured voltage and and computed current across this resistor, the power is only about 0.5watts. Though that was idle. I guess we should try to measure the voltage under full load somehow.  For now I will use them and if they burn up, I will replace them with higher power resistors.
 
+## Third Wave Enhancements
+
+The volume knob was all scratchy. I guess the cheap Chinese crap knob that was used just wore out. Funny because I barely even use this knob. And lately I still experience slight imbalance in volume from left to right side. This likely has to do with my room geometry. I would like to have separate volumes for left and right channels.
+
+So had the idea to remove the VU meters (Since those are basically cheap Chinese crap as well and they do not really work for me. They barely deflect on all volumes and I basically never look at them on the amp. So in place of the VU meters to put a potentiometer for the volume control.
+I cut a piece of 24ga aluminum I had handy and screwed it inside the chassis using the hardware for the VU meters. Then mounted two 1M pots. The same kind I used in my Traynor amp. They feel very satisfying to touch and turn. Using plastic knobs like I always have used on my amp and before on guitar. They are not ideal but do match the color scheme of black and silver.
+
+I noticed after there was slight buzz on the left channel. Replace the preamp tube. That makde a big difference. I guess the old Holland tube I was using is finally done. Wish I had a kind of tester for tubes. It seems a lot of the way I approach tubes is magic, finding a specific tube works in a specific slot on a chassis.
+
+## 2020-08-31
+
+* Replace the EL84 cathode bypass resistor (R1, R11) from 270 to 470 ohms. I think it was running a bit too hot before.
+* Notice there is no input capacitor to decouple the DC coming in. This is fucking why I get terrible hum when connecting to my Rolls MiniMix and computer audio. Install 0.047uF capacitor in series with inputs.
+* Notice there is not Grid stopper resistor into the first stage of the 12AX7 tubes (V2, V5). Install a 4.7K grid stop resistor following the newly added input decoupling capacitor.
+* Replace the 12AX7 input grid leak resistor (R5, R10) from 470K to 1M resistor. I think larger value will work better with the newly added decoupling capacitor and grid stopper resistor.
+* Notice I had the A/B elements for V2, V5 switched in the schematic from how it is. Update the schematic.
+* I had made an error in schematic before, The (C3, C11) actually go to ground, not feedback from 12AX7 output. And (R2, R12) is actually a grid leak resistor for th EL84. Ok. good. I was just about to add one of those.
+* There is no grid stopper resistor between preamp output after the capacitor and the EL84. Add a 5.6K resistor.
+
+This all came about as I was trying to attach one of those VFD spectum analyzers. It needs 5VDC. I have a 7805 type regulator. Make a rectifier and filter cap and circuit board to connect to the unused 5VAC fillament supply. I see 5V when I test it. And measure 4.9V on the VFD.  Maybe for some reason the VFD requires more current than the regulator IC can supply. I will investigate later.
+
+For now I am excited that these small tunings will make the amp sound a bit less "shrill". It felt there was a bit too much presence or high end sometimes, especially with sounds of people talking.
+
+Since there was no input capacitor, I bet that is why we were having shitty noise when connecting this to the mixer. And why I went on that foxhole to get the Art clean pro. Try to connect the amp directly to the mixer now. Heh. no noise. When crank it up there is the usual high pitch buzz. But that is always there on high gain settings. The hum sound is gone. So I can put away the clean pro box. One less part, and three less cables, on the desk.
+
 ## Ideas for future enhancements
 
 * Add balanced input channels (needs an op-amp) and TRS connector to convert from the balanced output from my mixer into the single unbalanced into the L/R channels.
