@@ -117,6 +117,7 @@ I noticed after there was slight buzz on the left channel. Replace the preamp tu
 * Notice I had the A/B elements for V2, V5 switched in the schematic from how it is. Update the schematic.
 * I had made an error in schematic before, The (C3, C11) actually go to ground, not feedback from 12AX7 output. And (R2, R12) is actually a grid leak resistor for th EL84. Ok. good. I was just about to add one of those.
 * There is no grid stopper resistor between preamp output after the capacitor and the EL84. Add a 5.6K resistor.
+* Change the EL34 grid leak resistors (R2, R12) from 470K to 1M
 
 This all came about as I was trying to attach one of those VFD spectum analyzers. It needs 5VDC. I have a 7805 type regulator. Make a rectifier and filter cap and circuit board to connect to the unused 5VAC fillament supply. I see 5V when I test it. And measure 4.9V on the VFD.  Maybe for some reason the VFD requires more current than the regulator IC can supply. I will investigate later.
 
