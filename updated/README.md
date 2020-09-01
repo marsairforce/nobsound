@@ -38,6 +38,8 @@ I orginally went with a 12AT7 tubes. As they have less gain then the 12AX7 tubes
 
 ![V2 amp schematic](amp_channel_schematic_v2.png)
 
+>R2 and C3 are incorrect here, these go to ground, and are not a feedback as indicated. I later discovered this while updating the schematic on 2020-08-31 for v2.3 revision.
+
 ### Power supply schematic
 
 ### Updated component list
@@ -104,7 +106,9 @@ I cut a piece of 24ga aluminum I had handy and screwed it inside the chassis usi
 
 I noticed after there was slight buzz on the left channel. Replace the preamp tube. That makde a big difference. I guess the old Holland tube I was using is finally done. Wish I had a kind of tester for tubes. It seems a lot of the way I approach tubes is magic, finding a specific tube works in a specific slot on a chassis.
 
-## 2020-08-31
+## 2020-08-31 (v2.3)
+
+![Amp schematic v2.3](amp_channel_schematic_v2.3.png)
 
 * Replace the EL84 cathode bypass resistor (R1, R11) from 270 to 470 ohms. I think it was running a bit too hot before.
 * Notice there is no input capacitor to decouple the DC coming in. This is fucking why I get terrible hum when connecting to my Rolls MiniMix and computer audio. Install 0.047uF capacitor in series with inputs.
@@ -119,9 +123,3 @@ This all came about as I was trying to attach one of those VFD spectum analyzers
 For now I am excited that these small tunings will make the amp sound a bit less "shrill". It felt there was a bit too much presence or high end sometimes, especially with sounds of people talking.
 
 Since there was no input capacitor, I bet that is why we were having shitty noise when connecting this to the mixer. And why I went on that foxhole to get the Art clean pro. Try to connect the amp directly to the mixer now. Heh. no noise. When crank it up there is the usual high pitch buzz. But that is always there on high gain settings. The hum sound is gone. So I can put away the clean pro box. One less part, and three less cables, on the desk.
-
-## Ideas for future enhancements
-
-* Add balanced input channels (needs an op-amp) and TRS connector to convert from the balanced output from my mixer into the single unbalanced into the L/R channels.
-* Integrate the bluetooth receiver I have on my desk into the amp. Use the LED for connected to override the input selection, so that the input goes to the output from the bluetooth receiver. Some kind of reed relay here then.
-* Add a headphone jack. When a 6.35mm stereo plug is attached to the front, it will cut out the speaker outputs from the back. The trick is to balance the loading so the volume of the headphones is about the same as that on the speakers. Also my bose qc25 headphones have a high impedance, around 300 ohms. Need to figure out that first. Also I kind of don't want a cord going over to the amp. It would be awkward as the amp is out of the way.
