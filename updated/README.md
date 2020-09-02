@@ -118,9 +118,25 @@ I noticed after there was slight buzz on the left channel. Replace the preamp tu
 * I had made an error in schematic before, The (C3, C11) actually go to ground, not feedback from 12AX7 output. And (R2, R12) is actually a grid leak resistor for th EL84. Ok. good. I was just about to add one of those.
 * There is no grid stopper resistor between preamp output after the capacitor and the EL84. Add a 5.6K resistor.
 * Change the EL34 grid leak resistors (R2, R12) from 470K to 1M
+* Nicely mount the diode rectifier circuit board onto the inside side of the chassis with standoffs and screws. Before I had this just dangling loose and covered with a piece of tape.
 
 This all came about as I was trying to attach one of those VFD spectum analyzers. It needs 5VDC. I have a 7805 type regulator. Make a rectifier and filter cap and circuit board to connect to the unused 5VAC fillament supply. I see 5V when I test it. And measure 4.9V on the VFD.  Maybe for some reason the VFD requires more current than the regulator IC can supply. I will investigate later.
 
 For now I am excited that these small tunings will make the amp sound a bit less "shrill". It felt there was a bit too much presence or high end sometimes, especially with sounds of people talking.
 
 Since there was no input capacitor, I bet that is why we were having shitty noise when connecting this to the mixer. And why I went on that foxhole to get the Art clean pro. Try to connect the amp directly to the mixer now. Heh. no noise. When crank it up there is the usual high pitch buzz. But that is always there on high gain settings. The hum sound is gone. So I can put away the clean pro box. One less part, and three less cables, on the desk.
+
+## 2020-09-01
+
+Come back to revisit the VFD spectrometer upgrade.
+
+Connect the power supply module I made to a lab power supply. At first I had fun experience of having to whack the power supply to make it work. Cheap Chinese crap strikes again. But it seems the 7805 (or switching regulator version of the one I have) needs at least 9V input to make it turn on. With the loading effect of the VFD anyway.  So with the 5VAC filament this was enough to give me a 5V regulated output on open circuit. But under load this was not enough input voltage.
+The total current draw seems to be  about 260mA at 10V input. or 2.6W.
+
+I have one of these small DC-DC converters that takes in 4-9V and then puts out 5V. so let's try this. Hm. The module I have is only 2 watts. That is going to push this pretty hard. Maybe let it run on my desk a bit to see if it burns up after a bit.
+
+It seems to work when I power it off the 5V supply as a clock. But once it starts to work as a display for audio it cuts out and reboots. This means likely that the 5V supply from the transformer can not source enough current here. Try to switch my power supply module to use one of the filament supplies. Ok. that seems to work, and not hose the amp. I bet this is somehow a weak ass counterfit transformer. Maybe I am used to Traynor transformers.
+
+Have the idea to replace the 12AX7 sockets with shielded sockets. I didn't really have a problem with noise. But mounting the VFD spectrograph meter on the chassis in front of the tubes, it is likely I would now be picking up stray  noise from this thing. You can hear the switch supply on it even. The shielded sockets I have are not very good. But they were a lot better than the likely counterfit sockets that were on the chassis. They just fall apart as you take them off.
+
+The VCD appears to work. I mounted it to the chassis with some furniture brackets I had and sheet metal screws. Drill hole to put wires into the chassis. The power supply is inside on the side of the chassis on stand offs. When there is no sound playing there are no bars stuck on a little bit (like I had when I connected this to the output of my computer audio interface, or mixer headphones before). So this allows the clock to turn on. For a while I have been just using this as a clock.

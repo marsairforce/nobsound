@@ -530,4 +530,16 @@ Wire Wire Line
 	5800 2650 5800 2350
 Wire Wire Line
 	5800 2950 5800 3300
+$Comp
+L Connector:Conn_01x01_Male J?
+U 1 1 5F53BD18
+P 6000 2350
+F 0 "J?" H 5972 2282 50  0000 R CNN
+F 1 "To VU Meter" H 5972 2373 50  0000 R CNN
+F 2 "" H 6000 2350 50  0001 C CNN
+F 3 "~" H 6000 2350 50  0001 C CNN
+	1    6000 2350
+	-1   0    0    1   
+$EndComp
+Connection ~ 5800 2350
 $EndSCHEMATC

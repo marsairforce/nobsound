@@ -348,26 +348,6 @@ F 3 "~" H 8150 4000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L dk_DC-DC-Converters:V7805-500 U1
-U 1 1 5F4F76F6
-P 8000 5050
-F 0 "U1" H 8000 5437 60  0000 C CNN
-F 1 "V7805-500" H 8000 5331 60  0000 C CNN
-F 2 "digikey-footprints:3-SIP_Module_V7805-500" H 8200 5250 60  0001 L CNN
-F 3 "https://www.cui.com/product/resource/digikeypdf/v78-500.pdf" H 8200 5350 60  0001 L CNN
-F 4 "102-1709-ND" H 8200 5450 60  0001 L CNN "Digi-Key_PN"
-F 5 "V7805-500" H 8200 5550 60  0001 L CNN "MPN"
-F 6 "Power Supplies - Board Mount" H 8200 5650 60  0001 L CNN "Category"
-F 7 "DC DC Converters" H 8200 5750 60  0001 L CNN "Family"
-F 8 "https://www.cui.com/product/resource/digikeypdf/v78-500.pdf" H 8200 5850 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/cui-inc/V7805-500/102-1709-ND/1828602" H 8200 5950 60  0001 L CNN "DK_Detail_Page"
-F 10 "DC DC CONVERTER 5V 2.5W" H 8200 6050 60  0001 L CNN "Description"
-F 11 "CUI Inc." H 8200 6150 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 8200 6250 60  0001 L CNN "Status"
-	1    8000 5050
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:CP C13
 U 1 1 5F4FA3D7
 P 7500 5100
@@ -378,34 +358,13 @@ F 3 "~" H 7500 5100 50  0001 C CNN
 	1    7500 5100
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:CP C14
-U 1 1 5F4FACD4
-P 8500 5100
-F 0 "C14" H 8618 5146 50  0000 L CNN
-F 1 "CP" H 8618 5055 50  0000 L CNN
-F 2 "" H 8538 4950 50  0001 C CNN
-F 3 "~" H 8500 5100 50  0001 C CNN
-	1    8500 5100
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	7100 4450 7100 4650
+	7100 4600 7100 4650
 Wire Wire Line
 	6800 4950 6750 4950
 Wire Wire Line
 	7400 4950 7500 4950
-Wire Wire Line
-	7500 4950 7600 4950
 Connection ~ 7500 4950
-Wire Wire Line
-	8400 4950 8500 4950
-Text Label 8500 4950 0    50   ~ 0
-+5V
-Wire Wire Line
-	8500 5400 8500 5250
-Wire Wire Line
-	8000 5400 8000 5350
 Wire Wire Line
 	7500 5400 7500 5250
 $Comp
@@ -420,15 +379,87 @@ F 3 "~" H 7100 4950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6750 5400 7500 5400
-Wire Wire Line
 	6750 4950 6750 5400
+Text Label 7100 4600 0    50   ~ 0
+f1
+Text Label 7100 5300 0    50   ~ 0
+f2
 Wire Wire Line
-	7500 5400 8000 5400
+	7100 5300 7100 5250
+$Comp
+L Connector:Conn_01x01_Male J?
+U 1 1 5F544D1D
+P 8950 4950
+AR Path="/5F1F04D2/5F544D1D" Ref="J?"  Part="1" 
+AR Path="/5F1E3F4D/5F544D1D" Ref="J?"  Part="1" 
+F 0 "J?" H 8922 4882 50  0000 R CNN
+F 1 "VU Meter +" H 8922 4973 50  0000 R CNN
+F 2 "" H 8950 4950 50  0001 C CNN
+F 3 "~" H 8950 4950 50  0001 C CNN
+	1    8950 4950
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:Conn_01x01_Male J?
+U 1 1 5F54648B
+P 8950 5050
+AR Path="/5F1F04D2/5F54648B" Ref="J?"  Part="1" 
+AR Path="/5F1E3F4D/5F54648B" Ref="J?"  Part="1" 
+F 0 "J?" H 8922 4982 50  0000 R CNN
+F 1 "VU Meter -" H 8922 5073 50  0000 R CNN
+F 2 "" H 8950 5050 50  0001 C CNN
+F 3 "~" H 8950 5050 50  0001 C CNN
+	1    8950 5050
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:Conn_01x01_Male J?
+U 1 1 5F54B4D4
+P 8950 5250
+AR Path="/5F1F04D2/5F54B4D4" Ref="J?"  Part="1" 
+AR Path="/5F1E3F4D/5F54B4D4" Ref="J?"  Part="1" 
+F 0 "J?" H 8922 5182 50  0000 R CNN
+F 1 "VU Meter GND" H 8922 5273 50  0000 R CNN
+F 2 "" H 8950 5250 50  0001 C CNN
+F 3 "~" H 8950 5250 50  0001 C CNN
+	1    8950 5250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8750 5350 8750 5250
+$Comp
+L power:Earth #PWR?
+U 1 1 5F54C2DF
+P 8750 5350
+F 0 "#PWR?" H 8750 5100 50  0001 C CNN
+F 1 "Earth" H 8750 5200 50  0001 C CNN
+F 2 "" H 8750 5350 50  0001 C CNN
+F 3 "~" H 8750 5350 50  0001 C CNN
+	1    8750 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Converter_DCDC:IH0505D PS?
+U 1 1 5F55887B
+P 8250 5050
+F 0 "PS?" H 8250 5417 50  0000 C CNN
+F 1 "IH0505D" H 8250 5326 50  0000 C CNN
+F 2 "Converter_DCDC:Converter_DCDC_XP_POWER-IHxxxxD_THT" H 7200 4800 50  0001 L CNN
+F 3 "https://www.xppower.com/pdfs/SF_IH.pdf" H 9300 4750 50  0001 L CNN
+	1    8250 5050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8750 4950 8650 4950
+Wire Wire Line
+	8750 5050 8650 5050
+Wire Wire Line
+	7500 4950 7850 4950
+Wire Wire Line
+	7850 5150 7850 5400
+Wire Wire Line
+	6750 5400 7500 5400
 Connection ~ 7500 5400
 Wire Wire Line
-	8000 5400 8500 5400
-Connection ~ 8000 5400
-Text Label 8500 5400 0    50   ~ 0
-0pv
+	7500 5400 7850 5400
 $EndSCHEMATC

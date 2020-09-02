@@ -540,4 +540,18 @@ Wire Wire Line
 	4000 4350 4200 4350
 Connection ~ 4200 4350
 Connection ~ 4200 5750
+$Comp
+L Connector:Conn_01x01_Male J?
+U 1 1 5F53FDB2
+P 5900 2200
+AR Path="/5F1F04D2/5F53FDB2" Ref="J?"  Part="1" 
+AR Path="/5F200EB9/5F53FDB2" Ref="J?"  Part="1" 
+F 0 "J?" H 5872 2132 50  0000 R CNN
+F 1 "To VU Meter" H 5872 2223 50  0000 R CNN
+F 2 "" H 5900 2200 50  0001 C CNN
+F 3 "~" H 5900 2200 50  0001 C CNN
+	1    5900 2200
+	-1   0    0    1   
+$EndComp
+Connection ~ 5700 2200
 $EndSCHEMATC
