@@ -498,21 +498,6 @@ $EndComp
 Wire Wire Line
 	3900 3550 3900 3400
 $Comp
-L Device:R R20
-U 1 1 5F56722A
-P 5700 2650
-F 0 "R20" H 5770 2696 50  0000 L CNN
-F 1 "5.6K" H 5770 2605 50  0000 L CNN
-F 2 "" V 5630 2650 50  0001 C CNN
-F 3 "~" H 5700 2650 50  0001 C CNN
-	1    5700 2650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5700 2500 5700 2200
-Wire Wire Line
-	5700 2800 5700 3150
-$Comp
 L Device:C C16
 U 1 1 5F5768EB
 P 3400 4350
@@ -523,21 +508,6 @@ F 3 "~" H 3400 4350 50  0001 C CNN
 	1    3400 4350
 	0    1    1    0   
 $EndComp
-$Comp
-L Device:R R19
-U 1 1 5F5828D1
-P 3850 4350
-F 0 "R19" V 3643 4350 50  0000 C CNN
-F 1 "4.7K" V 3734 4350 50  0000 C CNN
-F 2 "" V 3780 4350 50  0001 C CNN
-F 3 "~" H 3850 4350 50  0001 C CNN
-	1    3850 4350
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	3550 4350 3700 4350
-Wire Wire Line
-	4000 4350 4200 4350
 Connection ~ 4200 4350
 Connection ~ 4200 5750
 $Comp
@@ -554,4 +524,8 @@ F 3 "~" H 5900 2200 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Connection ~ 5700 2200
+Wire Wire Line
+	5700 2200 5700 3150
+Wire Wire Line
+	3550 4350 4200 4350
 $EndSCHEMATC

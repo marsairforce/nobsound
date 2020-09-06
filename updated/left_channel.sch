@@ -453,23 +453,6 @@ F 3 "~" H 3500 4500 50  0001 C CNN
 	1    3500 4500
 	0    1    1    0   
 $EndComp
-$Comp
-L Device:R R?
-U 1 1 5F5B00DC
-P 3950 4500
-AR Path="/5F200EB9/5F5B00DC" Ref="R?"  Part="1" 
-AR Path="/5F1F04D2/5F5B00DC" Ref="R15"  Part="1" 
-F 0 "R15" V 3743 4500 50  0000 C CNN
-F 1 "4.7K" V 3834 4500 50  0000 C CNN
-F 2 "" V 3880 4500 50  0001 C CNN
-F 3 "~" H 3950 4500 50  0001 C CNN
-	1    3950 4500
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	3650 4500 3800 4500
-Wire Wire Line
-	4100 4500 4300 4500
 Wire Wire Line
 	3050 4500 3350 4500
 Connection ~ 4300 5900
@@ -514,23 +497,6 @@ Wire Wire Line
 	4000 3150 4000 3200
 Connection ~ 4300 3150
 $Comp
-L Device:R R?
-U 1 1 5F5F04AC
-P 5800 2800
-AR Path="/5F200EB9/5F5F04AC" Ref="R?"  Part="1" 
-AR Path="/5F1F04D2/5F5F04AC" Ref="R17"  Part="1" 
-F 0 "R17" H 5870 2846 50  0000 L CNN
-F 1 "5.6K" H 5870 2755 50  0000 L CNN
-F 2 "" V 5730 2800 50  0001 C CNN
-F 3 "~" H 5800 2800 50  0001 C CNN
-	1    5800 2800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5800 2650 5800 2350
-Wire Wire Line
-	5800 2950 5800 3300
-$Comp
 L Connector:Conn_01x01_Male J?
 U 1 1 5F53BD18
 P 6000 2350
@@ -542,4 +508,9 @@ F 3 "~" H 6000 2350 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Connection ~ 5800 2350
+Wire Wire Line
+	5800 2350 5800 3300
+Connection ~ 4300 4500
+Wire Wire Line
+	3650 4500 4300 4500
 $EndSCHEMATC

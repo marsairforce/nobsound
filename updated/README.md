@@ -140,3 +140,12 @@ It seems to work when I power it off the 5V supply as a clock. But once it start
 Have the idea to replace the 12AX7 sockets with shielded sockets. I didn't really have a problem with noise. But mounting the VFD spectrograph meter on the chassis in front of the tubes, it is likely I would now be picking up stray  noise from this thing. You can hear the switch supply on it even. The shielded sockets I have are not very good. But they were a lot better than the likely counterfit sockets that were on the chassis. They just fall apart as you take them off.
 
 The VCD appears to work. I mounted it to the chassis with some furniture brackets I had and sheet metal screws. Drill hole to put wires into the chassis. The power supply is inside on the side of the chassis on stand offs. When there is no sound playing there are no bars stuck on a little bit (like I had when I connected this to the output of my computer audio interface, or mixer headphones before). So this allows the clock to turn on. For a while I have been just using this as a clock.
+
+## 2020-09-06
+
+I felt lately the nobsound sounded like i "had a blanket over the speakers". Craking up the master level on the Rolls mixer seems to do less effect than it used to.
+
+Adding that 5.6 k resistor between the preamp and poweramp stages I think. And I don't really need the 4.7K on the input either. 
+
+* Go delete R15, R17, R19, R20.
+
