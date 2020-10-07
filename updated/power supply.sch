@@ -36,7 +36,7 @@ F 3 "" H 4500 3750 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L local:Conn_IEC_Power J1
+L nobsound-audio-amplifier-rescue:Conn_IEC_Power-local J1
 U 1 1 5F1757DE
 P 3800 3900
 F 0 "J1" H 3681 4225 50  0000 C CNN
@@ -106,7 +106,7 @@ Wire Wire Line
 Wire Wire Line
 	5600 3700 5800 3700
 $Comp
-L Device:L_Core_Ferrite L1
+L nobsound-audio-amplifier-rescue:L_Core_Ferrite-Device L1
 U 1 1 5F187D89
 P 7300 3700
 F 0 "L1" V 7525 3700 50  0000 C CNN
@@ -119,9 +119,11 @@ $EndComp
 Wire Wire Line
 	6850 3700 7150 3700
 $Comp
-L Device:CP C6
+L nobsound-audio-amplifier-rescue:CP-Device C6
 U 1 1 5F18A643
 P 6850 3900
+AR Path="/5F18A643" Ref="C6"  Part="1" 
+AR Path="/5F1E3F4D/5F18A643" Ref="C6"  Part="1" 
 F 0 "C6" H 6968 3991 50  0000 L CNN
 F 1 "150uF" H 6968 3900 50  0000 L CNN
 F 2 "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm" H 6888 3750 50  0001 C CNN
@@ -144,9 +146,11 @@ F 3 "~" H 6850 4050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:CP C7
+L nobsound-audio-amplifier-rescue:CP-Device C7
 U 1 1 5F1901A9
 P 7650 3850
+AR Path="/5F1901A9" Ref="C7"  Part="1" 
+AR Path="/5F1E3F4D/5F1901A9" Ref="C7"  Part="1" 
 F 0 "C7" H 7768 3941 50  0000 L CNN
 F 1 "150uF" H 7768 3850 50  0000 L CNN
 F 2 "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm" H 7688 3700 50  0001 C CNN
@@ -348,9 +352,11 @@ F 3 "~" H 8150 4000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:CP C13
+L nobsound-audio-amplifier-rescue:CP-Device C13
 U 1 1 5F4FA3D7
 P 7500 5100
+AR Path="/5F4FA3D7" Ref="C13"  Part="1" 
+AR Path="/5F1E3F4D/5F4FA3D7" Ref="C13"  Part="1" 
 F 0 "C13" H 7618 5146 50  0000 L CNN
 F 1 "CP" H 7618 5055 50  0000 L CNN
 F 2 "" H 7538 4950 50  0001 C CNN
@@ -462,4 +468,6 @@ Wire Wire Line
 Connection ~ 7500 5400
 Wire Wire Line
 	7500 5400 7850 5400
+Text Notes 8050 3500 0    50   ~ 0
+364V
 $EndSCHEMATC

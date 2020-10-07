@@ -22,13 +22,13 @@ $EndSheet
 $Sheet
 S 4550 3100 1450 150 
 U 5F1F04D2
-F0 "Sheet5F1F04D1" 50
+F0 "left channel" 50
 F1 "left_channel.sch" 50
 $EndSheet
 $Sheet
 S 4550 3900 1450 150 
 U 5F200EB9
-F0 "Sheet5F200EB8" 50
+F0 "right channel" 50
 F1 "right_channel.sch" 50
 $EndSheet
 $EndSCHEMATC

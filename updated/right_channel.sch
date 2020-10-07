@@ -30,7 +30,7 @@ $EndComp
 Wire Wire Line
 	6950 1950 6800 1950
 $Comp
-L Device:CP C?
+L nobsound-audio-amplifier-rescue:CP-Device C?
 U 1 1 5F20DF69
 P 4200 1850
 AR Path="/5F20DF69" Ref="C?"  Part="1" 
@@ -89,21 +89,6 @@ F 3 "~" H 4700 1850 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Connection ~ 4200 1700
-$Comp
-L Device:C C?
-U 1 1 5F20DF89
-P 5050 2200
-AR Path="/5F20DF89" Ref="C?"  Part="1" 
-AR Path="/5F1F04D2/5F20DF89" Ref="C?"  Part="1" 
-AR Path="/5F200EB9/5F20DF89" Ref="C10"  Part="1" 
-F 0 "C10" V 4798 2200 50  0000 C CNN
-F 1 ".220uF" V 4900 2150 50  0000 C CNN
-F 2 "Capacitor_THT:CP_Radial_D4.0mm_P2.00mm" H 5088 2050 50  0001 C CNN
-F 3 "~" H 5050 2200 50  0001 C CNN
-F 4 "450V" V 4900 2400 50  0000 C CNN "Voltage"
-	1    5050 2200
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	4900 2200 4700 2200
 $Comp
@@ -222,7 +207,7 @@ F 3 "~" H 4750 5350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:CP C?
+L nobsound-audio-amplifier-rescue:CP-Device C?
 U 1 1 5F20DFD9
 P 5100 5350
 AR Path="/5F20DFD9" Ref="C?"  Part="1" 
@@ -338,7 +323,7 @@ Wire Wire Line
 Wire Wire Line
 	6950 2150 6950 2500
 $Comp
-L Device:CP C?
+L nobsound-audio-amplifier-rescue:CP-Device C?
 U 1 1 5F20E026
 P 7350 3950
 AR Path="/5F20E026" Ref="C?"  Part="1" 
@@ -420,7 +405,7 @@ Connection ~ 4700 3850
 Wire Wire Line
 	4700 3850 4950 3850
 $Comp
-L Device:R_POT_Dual_Separate RV1
+L nobsound-audio-amplifier-rescue:R_POT_Dual_Separate-Device RV1
 U 2 1 5F245DA2
 P 2950 4350
 F 0 "RV1" H 2880 4396 50  0000 R CNN
@@ -510,6 +495,11 @@ F 3 "~" H 3400 4350 50  0001 C CNN
 $EndComp
 Connection ~ 4200 4350
 Connection ~ 4200 5750
+Wire Wire Line
+	5700 2200 5700 3150
+Wire Wire Line
+	3550 4350 4200 4350
+Connection ~ 5700 2200
 $Comp
 L Connector:Conn_01x01_Male J?
 U 1 1 5F53FDB2
@@ -523,9 +513,54 @@ F 3 "~" H 5900 2200 50  0001 C CNN
 	1    5900 2200
 	-1   0    0    1   
 $EndComp
-Connection ~ 5700 2200
+Text Notes 4500 1650 0    50   ~ 0
+362V
+Text Notes 3250 1600 0    50   ~ 0
+364V
+Text Notes 4200 2450 0    50   ~ 0
+R = 30.8K\nV = 35.3V\nI = 1.14mA
+Text Notes 4250 5500 0    50   ~ 0
+R = 2.2K\nV = 2.56V\nI = 1.16mA
+Text Notes 2750 3050 0    50   ~ 0
+Vplate = 362 - 35.3 - 2.66\nVplate = 324.04\nI = 1.1mA\nP = 356mW
+Text Notes 7850 3950 0    50   ~ 0
+R = 460\nV = 15.72V\nI = 34.2mA\n
+Text Notes 7650 3200 0    50   ~ 0
+Vplate = 355 - 15.72\nVplate = 339.3V\nI = 34.2mA\nP = 11.6W
+Text Notes 7100 2550 0    50   ~ 0
+V = 355V
+Text Notes 7550 1500 0    50   ~ 0
+V = 9\nI = 34.2mA\nP = 308mW
+$Comp
+L Device:C C?
+U 1 1 5F858C56
+P 5050 2100
+F 0 "C?" V 4798 2100 50  0000 C CNN
+F 1 "0.1uF" V 4889 2100 50  0000 C CNN
+F 2 "" H 5088 1950 50  0001 C CNN
+F 3 "~" H 5050 2100 50  0001 C CNN
+	1    5050 2100
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5F858C5C
+P 5050 2300
+F 0 "C?" V 5200 2200 50  0000 C CNN
+F 1 "0.1uF" V 5300 2200 50  0000 C CNN
+F 2 "" H 5088 2150 50  0001 C CNN
+F 3 "~" H 5050 2300 50  0001 C CNN
+	1    5050 2300
+	0    1    1    0   
+$EndComp
 Wire Wire Line
-	5700 2200 5700 3150
+	5200 2100 5200 2200
 Wire Wire Line
-	3550 4350 4200 4350
+	5200 2200 5200 2300
+Connection ~ 5200 2200
+Wire Wire Line
+	4900 2100 4900 2200
+Wire Wire Line
+	4900 2200 4900 2300
+Connection ~ 4900 2200
 $EndSCHEMATC

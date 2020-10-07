@@ -19,6 +19,8 @@ Specifications:
 * Weight: about 7 kg
 * Size: 260mm x 215mm(including terminals and knobs 260mm) x 150mm (W*D*H)
 
+Chassis is close to the Hammond [1441-22BK3](https://www.hammfg.com/files/parts/pdf/1441-22BK3.pdf)
+
 It worked well for about a year.  But now there are some issues.
 
 ## Issues
