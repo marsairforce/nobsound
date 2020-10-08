@@ -175,16 +175,6 @@ $EndComp
 Wire Wire Line
 	7650 3700 8150 3700
 Connection ~ 7650 3700
-Text Label 8300 3700 0    50   ~ 0
-B+
-Text Label 5600 4400 2    50   ~ 0
-fl1
-Text Label 5600 4500 2    50   ~ 0
-fl2
-Text Label 5600 4700 2    50   ~ 0
-fr1
-Text Label 5600 4800 2    50   ~ 0
-fr2
 $Comp
 L Device:D D7
 U 1 1 5F1D3CFC
@@ -393,47 +383,6 @@ f2
 Wire Wire Line
 	7100 5300 7100 5250
 $Comp
-L Connector:Conn_01x01_Male J?
-U 1 1 5F544D1D
-P 8950 4950
-AR Path="/5F1F04D2/5F544D1D" Ref="J?"  Part="1" 
-AR Path="/5F1E3F4D/5F544D1D" Ref="J?"  Part="1" 
-F 0 "J?" H 8922 4882 50  0000 R CNN
-F 1 "VU Meter +" H 8922 4973 50  0000 R CNN
-F 2 "" H 8950 4950 50  0001 C CNN
-F 3 "~" H 8950 4950 50  0001 C CNN
-	1    8950 4950
-	-1   0    0    1   
-$EndComp
-$Comp
-L Connector:Conn_01x01_Male J?
-U 1 1 5F54648B
-P 8950 5050
-AR Path="/5F1F04D2/5F54648B" Ref="J?"  Part="1" 
-AR Path="/5F1E3F4D/5F54648B" Ref="J?"  Part="1" 
-F 0 "J?" H 8922 4982 50  0000 R CNN
-F 1 "VU Meter -" H 8922 5073 50  0000 R CNN
-F 2 "" H 8950 5050 50  0001 C CNN
-F 3 "~" H 8950 5050 50  0001 C CNN
-	1    8950 5050
-	-1   0    0    1   
-$EndComp
-$Comp
-L Connector:Conn_01x01_Male J?
-U 1 1 5F54B4D4
-P 8950 5250
-AR Path="/5F1F04D2/5F54B4D4" Ref="J?"  Part="1" 
-AR Path="/5F1E3F4D/5F54B4D4" Ref="J?"  Part="1" 
-F 0 "J?" H 8922 5182 50  0000 R CNN
-F 1 "VU Meter GND" H 8922 5273 50  0000 R CNN
-F 2 "" H 8950 5250 50  0001 C CNN
-F 3 "~" H 8950 5250 50  0001 C CNN
-	1    8950 5250
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	8750 5350 8750 5250
-$Comp
 L power:Earth #PWR?
 U 1 1 5F54C2DF
 P 8750 5350
@@ -470,4 +419,22 @@ Wire Wire Line
 	7500 5400 7850 5400
 Text Notes 8050 3500 0    50   ~ 0
 364V
+Text HLabel 8300 3700 2    50   Output ~ 0
+B+
+NoConn ~ 5600 4100
+NoConn ~ 5600 4200
+Text HLabel 5600 4400 2    50   Output ~ 0
+fl1
+Text HLabel 5600 4500 2    50   Output ~ 0
+fl2
+Text HLabel 5600 4700 2    50   Output ~ 0
+fr1
+Text HLabel 5600 4800 2    50   Output ~ 0
+fr2
+Wire Wire Line
+	8750 5050 8750 5350
+Text HLabel 8750 4950 2    50   Output ~ 0
+meter_pwr
+Text HLabel 8750 5050 2    50   Output ~ 0
+meter_gnd
 $EndSCHEMATC

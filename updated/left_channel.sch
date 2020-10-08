@@ -4,9 +4,9 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 3 4
-Title ""
+Title "Nobsound Channel"
 Date ""
-Rev ""
+Rev "2.4"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -73,19 +73,18 @@ $EndComp
 $Comp
 L Device:R R?
 U 1 1 5F1FED4F
-P 4800 2000
+P 4800 2050
 AR Path="/5F1FED4F" Ref="R?"  Part="1" 
 AR Path="/5F1F04D2/5F1FED4F" Ref="R4"  Part="1" 
-F 0 "R4" H 4730 1954 50  0000 R CNN
-F 1 "30K" H 4730 2045 50  0000 R CNN
-F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P20.32mm_Horizontal" V 4730 2000 50  0001 C CNN
-F 3 "~" H 4800 2000 50  0001 C CNN
-	1    4800 2000
+F 0 "R4" H 4730 2004 50  0000 R CNN
+F 1 "30K" H 4730 2095 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P20.32mm_Horizontal" V 4730 2050 50  0001 C CNN
+F 3 "~" H 4800 2050 50  0001 C CNN
+	1    4800 2050
 	-1   0    0    1   
 $EndComp
-Connection ~ 4300 1850
 Wire Wire Line
-	5000 2350 4800 2350
+	5200 2350 4800 2350
 $Comp
 L Device:R R?
 U 1 1 5F1FED63
@@ -169,13 +168,13 @@ Wire Wire Line
 Wire Wire Line
 	2900 4150 2900 4350
 Text Label 4700 3650 2    50   ~ 0
-fl1
+f1
 Text Label 4900 3650 2    50   ~ 0
-fl2
+f2
 Text Label 4700 5000 2    50   ~ 0
-fl1
+f1
 Text Label 4900 5000 2    50   ~ 0
-fl2
+f2
 $Comp
 L Device:R R?
 U 1 1 5F1FED9C
@@ -239,14 +238,10 @@ Wire Wire Line
 	5200 5200 5200 5350
 Connection ~ 5050 5200
 Wire Wire Line
-	4800 2150 4800 2350
+	4800 2200 4800 2250
 Connection ~ 4800 2350
 Wire Wire Line
-	4300 1850 4800 1850
-Wire Wire Line
 	3800 1850 3650 1850
-Text Label 3550 1850 2    50   ~ 0
-B+
 Wire Wire Line
 	4300 5900 4850 5900
 Wire Wire Line
@@ -292,9 +287,9 @@ Wire Wire Line
 Wire Wire Line
 	6700 3300 6500 3300
 Text Label 6950 3650 2    50   ~ 0
-fl1
+f1
 Text Label 7150 3650 2    50   ~ 0
-fl2
+f2
 $Comp
 L Device:R R?
 U 1 1 5F1FEDEC
@@ -321,40 +316,36 @@ Wire Wire Line
 $Comp
 L nobsound-audio-amplifier-rescue:CP-Device C?
 U 1 1 5F1FEDF9
-P 7450 4100
+P 7500 4100
 AR Path="/5F1FEDF9" Ref="C?"  Part="1" 
 AR Path="/5F1F04D2/5F1FEDF9" Ref="C1"  Part="1" 
-F 0 "C1" H 7568 4191 50  0000 L CNN
-F 1 "1000uF" H 7568 4100 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D8.0mm_P5.00mm" H 7488 3950 50  0001 C CNN
-F 3 "~" H 7450 4100 50  0001 C CNN
-F 4 "50V" H 7568 4009 50  0000 L CNN "Voltage"
-	1    7450 4100
+F 0 "C1" H 7618 4191 50  0000 L CNN
+F 1 "1000uF" H 7618 4100 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D8.0mm_P5.00mm" H 7538 3950 50  0001 C CNN
+F 3 "~" H 7500 4100 50  0001 C CNN
+F 4 "50V" H 7618 4009 50  0000 L CNN "Voltage"
+	1    7500 4100
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R?
 U 1 1 5F1FEE00
-P 7100 4100
+P 7050 4100
 AR Path="/5F1FEE00" Ref="R?"  Part="1" 
 AR Path="/5F1F04D2/5F1FEE00" Ref="R1"  Part="1" 
-F 0 "R1" H 6900 4150 50  0000 L CNN
-F 1 "470" H 6900 4050 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P20.32mm_Horizontal" V 7030 4100 50  0001 C CNN
-F 3 "~" H 7100 4100 50  0001 C CNN
-F 4 "3W" H 6950 3950 50  0000 C CNN "Power"
-	1    7100 4100
+F 0 "R1" H 6850 4150 50  0000 L CNN
+F 1 "470" H 6850 4050 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P20.32mm_Horizontal" V 6980 4100 50  0001 C CNN
+F 3 "~" H 7050 4100 50  0001 C CNN
+F 4 "3W" H 6900 3950 50  0000 C CNN "Power"
+	1    7050 4100
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	7300 3650 7300 3850
-Wire Wire Line
-	7300 3850 7450 3850
-Wire Wire Line
-	7450 3850 7450 3950
 Connection ~ 5200 5900
 Wire Wire Line
-	7450 4250 7450 5900
+	7500 4250 7500 5900
 Wire Wire Line
 	3650 1850 3650 1600
 Wire Wire Line
@@ -421,7 +412,7 @@ P 3500 4500
 AR Path="/5F200EB9/5F5B00D6" Ref="C?"  Part="1" 
 AR Path="/5F1F04D2/5F5B00D6" Ref="C15"  Part="1" 
 F 0 "C15" V 3248 4500 50  0000 C CNN
-F 1 "0.047uF" V 3339 4500 50  0000 C CNN
+F 1 "4.7uF" V 3339 4500 50  0000 C CNN
 F 2 "" H 3538 4350 50  0001 C CNN
 F 3 "~" H 3500 4500 50  0001 C CNN
 	1    3500 4500
@@ -449,7 +440,7 @@ Connection ~ 6500 3300
 Wire Wire Line
 	6500 3300 5800 3300
 Wire Wire Line
-	5300 2350 5800 2350
+	5500 2350 5800 2350
 $Comp
 L power:Earth #PWR?
 U 1 1 5F5E593F
@@ -470,18 +461,6 @@ Wire Wire Line
 Wire Wire Line
 	4000 3150 4000 3200
 Connection ~ 4300 3150
-$Comp
-L Connector:Conn_01x01_Male J?
-U 1 1 5F53BD18
-P 6000 2350
-F 0 "J?" H 5972 2282 50  0000 R CNN
-F 1 "To VU Meter" H 5972 2373 50  0000 R CNN
-F 2 "" H 6000 2350 50  0001 C CNN
-F 3 "~" H 6000 2350 50  0001 C CNN
-	1    6000 2350
-	-1   0    0    1   
-$EndComp
-Connection ~ 5800 2350
 Wire Wire Line
 	5800 2350 5800 3300
 Connection ~ 4300 4500
@@ -499,8 +478,8 @@ Text Notes 2750 3100 0    50   ~ 0
 Vplate = 362 - 29.8 - 2.14\nVplate = \nI = 1.1mA\nP = 330mW
 Text Notes 7150 2700 0    50   ~ 0
 V = 355V
-Text Notes 7900 4000 0    50   ~ 0
-R = 460\nV = 15.72V\nI = 34.2mA\nP = 538mW\n\nactual current: 68mA\n
+Text Notes 8200 4100 0    50   ~ 0
+R = 740\nV = 17.7V\nI = 49mA\nP=867mW\n
 Text Notes 7700 3250 0    50   ~ 0
 Vplate = 355 - 15.72\nVplate = 339.3V\nI = 34.2mA\nP = 11.6W\n\nactual:\n355-31.28=323.72\nP=22W
 Text Notes 7500 1700 0    50   ~ 0
@@ -508,214 +487,256 @@ V = 9\nI = 34.2mA\nP = 308mW
 $Comp
 L Device:Q_NPN_EBC Q?
 U 1 1 5F80FC62
-P 13400 4950
-F 0 "Q?" H 13591 4996 50  0000 L CNN
-F 1 "2N4124" H 13591 4905 50  0000 L CNN
-F 2 "" H 13600 5050 50  0001 C CNN
-F 3 "~" H 13400 4950 50  0001 C CNN
-	1    13400 4950
+P 13750 1250
+F 0 "Q?" H 13941 1296 50  0000 L CNN
+F 1 "2N4124" H 13941 1205 50  0000 L CNN
+F 2 "" H 13950 1350 50  0001 C CNN
+F 3 "~" H 13750 1250 50  0001 C CNN
+	1    13750 1250
 	-1   0    0    -1  
 $EndComp
 $Comp
 L Device:Q_NPN_EBC Q?
 U 1 1 5F8125CE
-P 13500 4600
-F 0 "Q?" H 13690 4646 50  0000 L CNN
-F 1 "2N4124" H 13690 4555 50  0000 L CNN
-F 2 "" H 13700 4700 50  0001 C CNN
-F 3 "~" H 13500 4600 50  0001 C CNN
-	1    13500 4600
+P 13850 900
+F 0 "Q?" H 14040 946 50  0000 L CNN
+F 1 "2N4124" H 14040 855 50  0000 L CNN
+F 2 "" H 14050 1000 50  0001 C CNN
+F 3 "~" H 13850 900 50  0001 C CNN
+	1    13850 900 
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R?
 U 1 1 5F81FC40
-P 13300 4300
-F 0 "R?" H 13370 4346 50  0000 L CNN
-F 1 "100k" H 13370 4255 50  0000 L CNN
-F 2 "" V 13230 4300 50  0001 C CNN
-F 3 "~" H 13300 4300 50  0001 C CNN
-	1    13300 4300
+P 13650 600
+F 0 "R?" H 13720 646 50  0000 L CNN
+F 1 "100k" H 13720 555 50  0000 L CNN
+F 2 "" V 13580 600 50  0001 C CNN
+F 3 "~" H 13650 600 50  0001 C CNN
+	1    13650 600 
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R_Potentiometer RV?
 U 1 1 5F823B94
-P 13600 5250
-F 0 "RV?" H 13531 5204 50  0000 R CNN
-F 1 "100" H 13531 5295 50  0000 R CNN
-F 2 "" H 13600 5250 50  0001 C CNN
-F 3 "~" H 13600 5250 50  0001 C CNN
-	1    13600 5250
+P 13950 1550
+F 0 "RV?" H 13881 1504 50  0000 R CNN
+F 1 "100" H 13881 1595 50  0000 R CNN
+F 2 "" H 13950 1550 50  0001 C CNN
+F 3 "~" H 13950 1550 50  0001 C CNN
+	1    13950 1550
 	1    0    0    1   
 $EndComp
 Wire Wire Line
-	13600 5100 13600 5050
+	13950 1400 13950 1350
 Wire Wire Line
-	13600 4800 13600 4950
-Connection ~ 13600 4950
+	13950 1100 13950 1250
+Connection ~ 13950 1250
 Wire Wire Line
-	13300 4600 13300 4750
+	13650 900  13650 1050
 Wire Wire Line
-	13300 4600 13300 4450
-Connection ~ 13300 4600
+	13650 900  13650 750 
+Connection ~ 13650 900 
 Wire Wire Line
-	13300 5150 13300 5400
+	13650 1450 13650 1700
 Wire Wire Line
-	13300 5400 13450 5400
+	13650 1700 13800 1700
 Wire Wire Line
-	13600 4400 13600 4150
+	13950 700  13950 450 
 Wire Wire Line
-	13450 5400 13450 5500
-$Comp
-L Device:C C?
-U 1 1 5F848CBC
-P 5150 2250
-F 0 "C?" V 4898 2250 50  0000 C CNN
-F 1 "0.1uF" V 4989 2250 50  0000 C CNN
-F 2 "" H 5188 2100 50  0001 C CNN
-F 3 "~" H 5150 2250 50  0001 C CNN
-	1    5150 2250
-	0    1    1    0   
-$EndComp
+	13800 1700 13800 1800
 $Comp
 L Device:C C?
 U 1 1 5F84A01F
-P 5150 2450
-F 0 "C?" V 5300 2350 50  0000 C CNN
-F 1 "0.1uF" V 5400 2350 50  0000 C CNN
-F 2 "" H 5188 2300 50  0001 C CNN
-F 3 "~" H 5150 2450 50  0001 C CNN
-	1    5150 2450
+P 5350 2350
+F 0 "C?" V 5500 2250 50  0000 C CNN
+F 1 "10uF" V 5600 2250 50  0000 C CNN
+F 2 "" H 5388 2200 50  0001 C CNN
+F 3 "~" H 5350 2350 50  0001 C CNN
+	1    5350 2350
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	5300 2250 5300 2350
-Wire Wire Line
-	5300 2350 5300 2450
-Connection ~ 5300 2350
-Wire Wire Line
-	5000 2250 5000 2350
-Wire Wire Line
-	5000 2350 5000 2450
-Connection ~ 5000 2350
-Wire Wire Line
-	13300 4150 13450 4150
+	13650 450  13800 450 
 $Comp
 L Device:R R?
 U 1 1 5F85F894
-P 13450 4000
-F 0 "R?" H 13520 4046 50  0000 L CNN
-F 1 "1" H 13520 3955 50  0000 L CNN
-F 2 "" V 13380 4000 50  0001 C CNN
-F 3 "~" H 13450 4000 50  0001 C CNN
-	1    13450 4000
+P 13800 300
+F 0 "R?" H 13870 346 50  0000 L CNN
+F 1 "1" H 13870 255 50  0000 L CNN
+F 2 "" V 13730 300 50  0001 C CNN
+F 3 "~" H 13800 300 50  0001 C CNN
+	1    13800 300 
 	1    0    0    -1  
 $EndComp
-Connection ~ 13450 4150
+Connection ~ 13800 450 
 Wire Wire Line
-	13450 4150 13600 4150
+	13800 450  13950 450 
 $Comp
 L Connector:Screw_Terminal_01x02 J?
 U 1 1 5F860616
-P 12800 4700
-F 0 "J?" H 12718 4375 50  0000 C CNN
-F 1 "Screw_Terminal_01x02" H 12718 4466 50  0000 C CNN
-F 2 "" H 12800 4700 50  0001 C CNN
-F 3 "~" H 12800 4700 50  0001 C CNN
-	1    12800 4700
+P 13150 1000
+F 0 "J?" H 13068 675 50  0000 C CNN
+F 1 "Screw_Terminal_01x02" H 13068 766 50  0000 C CNN
+F 2 "" H 13150 1000 50  0001 C CNN
+F 3 "~" H 13150 1000 50  0001 C CNN
+	1    13150 1000
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	13000 4600 13000 3850
+	13350 900  13350 150 
 Wire Wire Line
-	13000 3850 13450 3850
+	13350 150  13800 150 
 Wire Wire Line
-	13000 4700 13000 5400
+	13350 1000 13350 1700
 Wire Wire Line
-	13000 5400 13300 5400
-Connection ~ 13300 5400
+	13350 1700 13650 1700
+Connection ~ 13650 1700
 Wire Wire Line
-	13450 3650 13450 3850
-Connection ~ 13450 3850
+	13800 -50  13800 150 
+Connection ~ 13800 150 
 $Comp
 L Connector:Conn_01x01_Male J?
 U 1 1 5F86F9E5
-P 13800 3850
-F 0 "J?" H 13772 3782 50  0000 R CNN
-F 1 "Conn_01x01_Male" H 13772 3873 50  0000 R CNN
-F 2 "" H 13800 3850 50  0001 C CNN
-F 3 "~" H 13800 3850 50  0001 C CNN
-	1    13800 3850
+P 14150 150
+F 0 "J?" H 14122 82  50  0000 R CNN
+F 1 "Conn_01x01_Male" H 14122 173 50  0000 R CNN
+F 2 "" H 14150 150 50  0001 C CNN
+F 3 "~" H 14150 150 50  0001 C CNN
+	1    14150 150 
 	-1   0    0    1   
 $EndComp
 $Comp
 L Connector:Conn_01x01_Male J?
 U 1 1 5F871049
-P 13800 4150
-F 0 "J?" H 13772 4082 50  0000 R CNN
-F 1 "Conn_01x01_Male" H 13772 4173 50  0000 R CNN
-F 2 "" H 13800 4150 50  0001 C CNN
-F 3 "~" H 13800 4150 50  0001 C CNN
-	1    13800 4150
+P 14150 450
+F 0 "J?" H 14122 382 50  0000 R CNN
+F 1 "Conn_01x01_Male" H 14122 473 50  0000 R CNN
+F 2 "" H 14150 450 50  0001 C CNN
+F 3 "~" H 14150 450 50  0001 C CNN
+	1    14150 450 
 	-1   0    0    1   
 $EndComp
-Connection ~ 13600 4150
+Connection ~ 13950 450 
 Wire Wire Line
-	13600 3850 13450 3850
+	13950 150  13800 150 
 $Comp
 L Connector:Screw_Terminal_01x02 J?
 U 1 1 5F88DD97
-P 14100 5150
-F 0 "J?" H 14180 5142 50  0000 L CNN
-F 1 "Screw_Terminal_01x02" H 14180 5051 50  0000 L CNN
-F 2 "" H 14100 5150 50  0001 C CNN
-F 3 "~" H 14100 5150 50  0001 C CNN
-	1    14100 5150
+P 14450 1450
+F 0 "J?" H 14530 1442 50  0000 L CNN
+F 1 "Screw_Terminal_01x02" H 14530 1351 50  0000 L CNN
+F 2 "" H 14450 1450 50  0001 C CNN
+F 3 "~" H 14450 1450 50  0001 C CNN
+	1    14450 1450
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	13900 5150 13800 5150
+	14250 1450 14150 1450
 Wire Wire Line
-	13800 5150 13800 5050
+	14150 1450 14150 1350
 Wire Wire Line
-	13800 5050 13600 5050
-Connection ~ 13600 5050
+	14150 1350 13950 1350
+Connection ~ 13950 1350
 Wire Wire Line
-	13600 5050 13600 4950
+	13950 1350 13950 1250
 Wire Wire Line
-	13900 5250 13800 5250
+	14250 1550 14150 1550
 Wire Wire Line
-	13800 5250 13800 5500
+	14150 1550 14150 1800
 Wire Wire Line
-	13800 5500 13450 5500
-Connection ~ 13800 5250
+	14150 1800 13800 1800
+Connection ~ 14150 1550
 Wire Wire Line
-	13800 5250 13750 5250
-Connection ~ 13450 5500
+	14150 1550 14100 1550
+Connection ~ 13800 1800
 Wire Wire Line
-	13450 5500 13450 5700
-NoConn ~ 13600 5400
+	13800 1800 13800 2000
+NoConn ~ 13950 1700
+Wire Notes Line
+	16000 -50  16000 2300
+Wire Notes Line
+	16000 2300 12500 2300
+Wire Notes Line
+	12500 -50  16000 -50 
+Wire Notes Line
+	12500 -50  12500 2300
+Text Notes 12550 -100 0    50   ~ 0
+I built this constant current source to experiment \nwith replacing the EL84 cathode lode resistor.\nIt worked. \nBut this design is only rated for 600mW. it gets warm just like the resistor.\nFor the complexity, this is not needed anyway.
 Wire Wire Line
-	5200 5900 7100 5900
+	7050 3850 7300 3850
 Wire Wire Line
-	7300 3850 7100 3850
+	7300 3850 7500 3850
 Wire Wire Line
-	7100 3850 7100 3950
+	7500 3850 7500 3950
 Connection ~ 7300 3850
 Wire Wire Line
-	7100 4250 7100 5900
-Connection ~ 7100 5900
+	7050 3950 7050 3850
 Wire Wire Line
-	7100 5900 7450 5900
-Wire Notes Line
-	15650 3650 15650 6000
-Wire Notes Line
-	15650 6000 12150 6000
-Wire Notes Line
-	12150 3650 15650 3650
-Wire Notes Line
-	12150 3650 12150 6000
-Text Notes 12200 3600 0    50   ~ 0
-I built this constant current source to experiment \nwith replacing the EL84 cathode lode resistor.\nIt worked. \nBut this design is only rated for 600mW. it gets warm just like the resistor.\nFor the complexity, this is not needed anyway.
+	5200 5900 7050 5900
+$Comp
+L Device:R R?
+U 1 1 5F9CA9C8
+P 7050 4600
+AR Path="/5F9CA9C8" Ref="R?"  Part="1" 
+AR Path="/5F1F04D2/5F9CA9C8" Ref="R?"  Part="1" 
+F 0 "R?" H 6850 4650 50  0000 L CNN
+F 1 "270" H 6850 4550 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P20.32mm_Horizontal" V 6980 4600 50  0001 C CNN
+F 3 "~" H 7050 4600 50  0001 C CNN
+F 4 "3W" H 6900 4450 50  0000 C CNN "Power"
+	1    7050 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7050 4250 7050 4450
+Wire Wire Line
+	7050 4750 7050 5900
+Connection ~ 7050 5900
+Wire Wire Line
+	7050 5900 7500 5900
+Text HLabel 3550 1850 0    50   Input ~ 0
+B+
+Text HLabel 5850 2350 2    50   Output ~ 0
+Meter
+Wire Wire Line
+	5800 2350 5850 2350
+Connection ~ 5800 2350
+$Comp
+L Device:C C?
+U 1 1 5FA1B98E
+P 5150 2050
+F 0 "C?" H 5265 2096 50  0000 L CNN
+F 1 "330pF" H 5265 2005 50  0000 L CNN
+F 2 "" H 5188 1900 50  0001 C CNN
+F 3 "~" H 5150 2050 50  0001 C CNN
+	1    5150 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 1850 4800 1850
+Wire Wire Line
+	4800 1850 4800 1900
+Connection ~ 4300 1850
+Wire Wire Line
+	5150 1900 5150 1850
+Wire Wire Line
+	5150 1850 4800 1850
+Connection ~ 4800 1850
+Wire Wire Line
+	5150 2200 5150 2250
+Wire Wire Line
+	5150 2250 4800 2250
+Connection ~ 4800 2250
+Wire Wire Line
+	4800 2250 4800 2350
+Text HLabel 2000 2200 0    50   Input ~ 0
+f1
+Text HLabel 2000 2350 0    50   Input ~ 0
+f2
+Text Label 2000 2200 0    50   ~ 0
+f1
+Text Label 2000 2350 0    50   ~ 0
+f2
 $EndSCHEMATC

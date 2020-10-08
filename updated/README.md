@@ -145,7 +145,48 @@ The VCD appears to work. I mounted it to the chassis with some furniture bracket
 
 I felt lately the nobsound sounded like i "had a blanket over the speakers". Craking up the master level on the Rolls mixer seems to do less effect than it used to.
 
-Adding that 5.6 k resistor between the preamp and poweramp stages I think. And I don't really need the 4.7K on the input either. 
+Adding that 5.6 k resistor between the preamp and poweramp stages I think. And I don't really need the 4.7K on the input either.
 
 * Go delete R15, R17, R19, R20.
 
+## 2020-10-07 (v2.4)
+
+![Amp schematic v2.4](amp_channel_schematic_v2.4.png)
+
+Replace the 0.22uF capacitor with some not-counterfeit capacitors.  I only had 0.1uF, so putting two of these in parallel.
+
+I think the EL84s are still running a bit too hot.
+
+Also the right and left channels have slightly different volumes for the same knob position.
+
+Measure voltages and resistances. Compute currents.
+
+Experiment with different cathode load resistors for the EL84. I find a 1.2K resistor gives us a good 84% plate dissipation (according to https://robrobinette.com/Tube_Bias_Calculator.htm )
+
+Experiment with a constant current source using transistors. I can only get up to about 40mA on this. I think the voltage drop through the transistors with the high impedance here is losing some of the current?
+
+Experiment with different resistors.
+
+Max cathode current is [65mA](https://en.wikipedia.org/wiki/EL84).
+
+I am getting about 68 to 70mA right now with just the 470 ohm resistor in there.
+
+Find that when I put in the 270 ohm resistor I used to have in there, in series with the 470 ohm (so 740 ohms total) I am able to get about 50mA cathode current.
+
+I like the idea of tinkering with current sources, but to add all this stuff and an adjustment knob when just 2 resistors will work well enough seems silly.
+
+I would use a single resistor. But these are what I have in stock at the moment.
+
+So updating both channels with this series resistor. I now am using about 40-60mA less from the power supply. I think it is no longer doing that high pitch whine from the transformer like it would before. Just the noise from the inverter in the VFD module now.
+
+Put the amp back together for now.
+
+Nope.
+
+It felt a little too much high end now. It is good that it feels more sparkly. Likely less loading the power suppy it is able to do higher frequencies. But it is too bright for my tastes.
+
+* Replace the input bypass capacitors from 0.047uF to 4.7uF. I used SMD ceramics soldered to pin headers, soldered to the wire. Awesome hack.
+* Replaced the 2x 0.1uF coupling capacitor between preamp and power amp with a 10uF 250V. its probably fine.
+* Added a 330pF 400V bypass cap onto the plate of the preamp. Hoping this helps tame the higher frequencies a bit.
+
+Ok. back together now it sounds better bass response and less of that too much fizzy it was.

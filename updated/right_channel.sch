@@ -4,9 +4,9 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 4 4
-Title ""
+Title "Nobsound Channel"
 Date ""
-Rev ""
+Rev "2.4"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -77,20 +77,17 @@ $EndComp
 $Comp
 L Device:R R?
 U 1 1 5F20DF7C
-P 4700 1850
+P 4700 1900
 AR Path="/5F20DF7C" Ref="R?"  Part="1" 
 AR Path="/5F1F04D2/5F20DF7C" Ref="R?"  Part="1" 
 AR Path="/5F200EB9/5F20DF7C" Ref="R9"  Part="1" 
-F 0 "R9" H 4630 1804 50  0000 R CNN
-F 1 "30K" H 4630 1895 50  0000 R CNN
-F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P20.32mm_Horizontal" V 4630 1850 50  0001 C CNN
-F 3 "~" H 4700 1850 50  0001 C CNN
-	1    4700 1850
+F 0 "R9" H 4630 1854 50  0000 R CNN
+F 1 "30K" H 4630 1945 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P20.32mm_Horizontal" V 4630 1900 50  0001 C CNN
+F 3 "~" H 4700 1900 50  0001 C CNN
+	1    4700 1900
 	-1   0    0    1   
 $EndComp
-Connection ~ 4200 1700
-Wire Wire Line
-	4900 2200 4700 2200
 $Comp
 L Device:C C?
 U 1 1 5F20DF96
@@ -167,13 +164,13 @@ Wire Wire Line
 Wire Wire Line
 	3100 4350 3250 4350
 Text Label 4600 3500 2    50   ~ 0
-fl1
+f1
 Text Label 4800 3500 2    50   ~ 0
-fl2
+f2
 Text Label 4600 4850 2    50   ~ 0
-fl1
+f1
 Text Label 4800 4850 2    50   ~ 0
-fl2
+f2
 $Comp
 L Device:R R?
 U 1 1 5F20DFC9
@@ -239,15 +236,9 @@ Wire Wire Line
 Wire Wire Line
 	5100 5050 5100 5200
 Connection ~ 4950 5050
-Wire Wire Line
-	4700 2000 4700 2200
 Connection ~ 4700 2200
 Wire Wire Line
-	4200 1700 4700 1700
-Wire Wire Line
 	3700 1700 3550 1700
-Text Label 3450 1700 2    50   ~ 0
-B+
 Wire Wire Line
 	4200 5750 4750 5750
 Wire Wire Line
@@ -295,9 +286,9 @@ Wire Wire Line
 Wire Wire Line
 	6600 3150 6300 3150
 Text Label 6850 3500 2    50   ~ 0
-fl1
+f1
 Text Label 7050 3500 2    50   ~ 0
-fl2
+f2
 $Comp
 L Device:R R?
 U 1 1 5F20E019
@@ -346,16 +337,9 @@ Wire Wire Line
 Wire Wire Line
 	7350 3700 7350 3800
 Connection ~ 7200 3700
-Wire Wire Line
-	7000 4100 7000 5750
-Wire Wire Line
-	7000 5750 5100 5750
 Connection ~ 5100 5750
 Wire Wire Line
 	7350 4100 7350 5750
-Wire Wire Line
-	7350 5750 7000 5750
-Connection ~ 7000 5750
 Wire Wire Line
 	3550 1700 3550 1450
 Wire Wire Line
@@ -463,8 +447,6 @@ $EndComp
 Wire Wire Line
 	6300 3550 6300 3450
 Wire Wire Line
-	5200 2200 5700 2200
-Wire Wire Line
 	4200 3000 3900 3000
 Wire Wire Line
 	3900 3000 3900 3100
@@ -487,7 +469,7 @@ L Device:C C16
 U 1 1 5F5768EB
 P 3400 4350
 F 0 "C16" V 3148 4350 50  0000 C CNN
-F 1 "0.047uF" V 3239 4350 50  0000 C CNN
+F 1 "4.7uF" V 3239 4350 50  0000 C CNN
 F 2 "" H 3438 4200 50  0001 C CNN
 F 3 "~" H 3400 4350 50  0001 C CNN
 	1    3400 4350
@@ -496,23 +478,7 @@ $EndComp
 Connection ~ 4200 4350
 Connection ~ 4200 5750
 Wire Wire Line
-	5700 2200 5700 3150
-Wire Wire Line
 	3550 4350 4200 4350
-Connection ~ 5700 2200
-$Comp
-L Connector:Conn_01x01_Male J?
-U 1 1 5F53FDB2
-P 5900 2200
-AR Path="/5F1F04D2/5F53FDB2" Ref="J?"  Part="1" 
-AR Path="/5F200EB9/5F53FDB2" Ref="J?"  Part="1" 
-F 0 "J?" H 5872 2132 50  0000 R CNN
-F 1 "To VU Meter" H 5872 2223 50  0000 R CNN
-F 2 "" H 5900 2200 50  0001 C CNN
-F 3 "~" H 5900 2200 50  0001 C CNN
-	1    5900 2200
-	-1   0    0    1   
-$EndComp
 Text Notes 4500 1650 0    50   ~ 0
 362V
 Text Notes 3250 1600 0    50   ~ 0
@@ -524,43 +490,95 @@ R = 2.2K\nV = 2.56V\nI = 1.16mA
 Text Notes 2750 3050 0    50   ~ 0
 Vplate = 362 - 35.3 - 2.66\nVplate = 324.04\nI = 1.1mA\nP = 356mW
 Text Notes 7850 3950 0    50   ~ 0
-R = 460\nV = 15.72V\nI = 34.2mA\n
-Text Notes 7650 3200 0    50   ~ 0
-Vplate = 355 - 15.72\nVplate = 339.3V\nI = 34.2mA\nP = 11.6W
+R = 740\nV = 17.3V\nI = 48mA\nP=830mW
 Text Notes 7100 2550 0    50   ~ 0
 V = 355V
 Text Notes 7550 1500 0    50   ~ 0
 V = 9\nI = 34.2mA\nP = 308mW
 $Comp
 L Device:C C?
-U 1 1 5F858C56
-P 5050 2100
-F 0 "C?" V 4798 2100 50  0000 C CNN
-F 1 "0.1uF" V 4889 2100 50  0000 C CNN
-F 2 "" H 5088 1950 50  0001 C CNN
-F 3 "~" H 5050 2100 50  0001 C CNN
-	1    5050 2100
+U 1 1 5F858C5C
+P 5450 2200
+F 0 "C?" V 5600 2100 50  0000 C CNN
+F 1 "10uF" V 5700 2100 50  0000 C CNN
+F 2 "" H 5488 2050 50  0001 C CNN
+F 3 "~" H 5450 2200 50  0001 C CNN
+	1    5450 2200
 	0    1    1    0   
 $EndComp
+Wire Wire Line
+	5100 5750 7000 5750
+$Comp
+L Device:R R?
+U 1 1 5F9DD879
+P 7000 4450
+AR Path="/5F9DD879" Ref="R?"  Part="1" 
+AR Path="/5F1F04D2/5F9DD879" Ref="R?"  Part="1" 
+AR Path="/5F200EB9/5F9DD879" Ref="R?"  Part="1" 
+F 0 "R?" H 6800 4500 50  0000 L CNN
+F 1 "270" H 6800 4400 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P20.32mm_Horizontal" V 6930 4450 50  0001 C CNN
+F 3 "~" H 7000 4450 50  0001 C CNN
+F 4 "3W" H 6850 4300 50  0000 C CNN "Power"
+	1    7000 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7000 4100 7000 4300
+Wire Wire Line
+	7000 4600 7000 5750
+Connection ~ 7000 5750
+Wire Wire Line
+	7000 5750 7350 5750
+Wire Wire Line
+	4700 2200 5300 2200
 $Comp
 L Device:C C?
-U 1 1 5F858C5C
-P 5050 2300
-F 0 "C?" V 5200 2200 50  0000 C CNN
-F 1 "0.1uF" V 5300 2200 50  0000 C CNN
-F 2 "" H 5088 2150 50  0001 C CNN
-F 3 "~" H 5050 2300 50  0001 C CNN
-	1    5050 2300
-	0    1    1    0   
+U 1 1 5F9FAE06
+P 5050 1900
+F 0 "C?" H 5165 1946 50  0000 L CNN
+F 1 "330pF" H 5165 1855 50  0000 L CNN
+F 2 "" H 5088 1750 50  0001 C CNN
+F 3 "~" H 5050 1900 50  0001 C CNN
+	1    5050 1900
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5200 2100 5200 2200
+	4200 1700 4700 1700
 Wire Wire Line
-	5200 2200 5200 2300
-Connection ~ 5200 2200
+	5050 1700 5050 1750
+Connection ~ 4200 1700
 Wire Wire Line
-	4900 2100 4900 2200
+	4700 1750 4700 1700
+Connection ~ 4700 1700
 Wire Wire Line
-	4900 2200 4900 2300
-Connection ~ 4900 2200
+	4700 1700 5050 1700
+Wire Wire Line
+	5050 2050 5050 2100
+Wire Wire Line
+	5050 2100 4700 2100
+Wire Wire Line
+	4700 2050 4700 2100
+Connection ~ 4700 2100
+Wire Wire Line
+	4700 2100 4700 2200
+Wire Wire Line
+	5600 2200 5700 2200
+Wire Wire Line
+	5700 2200 5700 3150
+Text HLabel 5800 2200 2    50   Output ~ 0
+Meter
+Wire Wire Line
+	5800 2200 5700 2200
+Connection ~ 5700 2200
+Text HLabel 3450 1700 0    50   Input ~ 0
+B+
+Text HLabel 2350 2100 0    50   Input ~ 0
+f1
+Text HLabel 2350 2250 0    50   Input ~ 0
+f2
+Text Label 2350 2100 0    50   ~ 0
+f1
+Text Label 2350 2250 0    50   ~ 0
+f2
 $EndSCHEMATC
