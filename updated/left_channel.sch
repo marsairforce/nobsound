@@ -237,8 +237,6 @@ Wire Wire Line
 Wire Wire Line
 	5200 5200 5200 5350
 Connection ~ 5050 5200
-Wire Wire Line
-	4800 2200 4800 2250
 Connection ~ 4800 2350
 Wire Wire Line
 	3800 1850 3650 1850
@@ -703,34 +701,11 @@ Meter
 Wire Wire Line
 	5800 2350 5850 2350
 Connection ~ 5800 2350
-$Comp
-L Device:C C?
-U 1 1 5FA1B98E
-P 5150 2050
-F 0 "C?" H 5265 2096 50  0000 L CNN
-F 1 "330pF" H 5265 2005 50  0000 L CNN
-F 2 "" H 5188 1900 50  0001 C CNN
-F 3 "~" H 5150 2050 50  0001 C CNN
-	1    5150 2050
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4300 1850 4800 1850
 Wire Wire Line
 	4800 1850 4800 1900
 Connection ~ 4300 1850
-Wire Wire Line
-	5150 1900 5150 1850
-Wire Wire Line
-	5150 1850 4800 1850
-Connection ~ 4800 1850
-Wire Wire Line
-	5150 2200 5150 2250
-Wire Wire Line
-	5150 2250 4800 2250
-Connection ~ 4800 2250
-Wire Wire Line
-	4800 2250 4800 2350
 Text HLabel 2000 2200 0    50   Input ~ 0
 f1
 Text HLabel 2000 2350 0    50   Input ~ 0
@@ -739,4 +714,6 @@ Text Label 2000 2200 0    50   ~ 0
 f1
 Text Label 2000 2350 0    50   ~ 0
 f2
+Wire Wire Line
+	4800 2200 4800 2350
 $EndSCHEMATC

@@ -532,36 +532,11 @@ Wire Wire Line
 	7000 5750 7350 5750
 Wire Wire Line
 	4700 2200 5300 2200
-$Comp
-L Device:C C?
-U 1 1 5F9FAE06
-P 5050 1900
-F 0 "C?" H 5165 1946 50  0000 L CNN
-F 1 "330pF" H 5165 1855 50  0000 L CNN
-F 2 "" H 5088 1750 50  0001 C CNN
-F 3 "~" H 5050 1900 50  0001 C CNN
-	1    5050 1900
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4200 1700 4700 1700
-Wire Wire Line
-	5050 1700 5050 1750
 Connection ~ 4200 1700
 Wire Wire Line
 	4700 1750 4700 1700
-Connection ~ 4700 1700
-Wire Wire Line
-	4700 1700 5050 1700
-Wire Wire Line
-	5050 2050 5050 2100
-Wire Wire Line
-	5050 2100 4700 2100
-Wire Wire Line
-	4700 2050 4700 2100
-Connection ~ 4700 2100
-Wire Wire Line
-	4700 2100 4700 2200
 Wire Wire Line
 	5600 2200 5700 2200
 Wire Wire Line
@@ -581,4 +556,6 @@ Text Label 2350 2100 0    50   ~ 0
 f1
 Text Label 2350 2250 0    50   ~ 0
 f2
+Wire Wire Line
+	4700 2050 4700 2200
 $EndSCHEMATC
