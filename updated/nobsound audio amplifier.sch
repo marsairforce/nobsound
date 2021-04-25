@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 4
+Sheet 1 6
 Title ""
 Date ""
 Rev ""
@@ -13,19 +13,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Sheet
-S 2750 3150 550  900 
-U 5F1E3F4D
-F0 "Sheet5F1E3F4C" 50
-F1 "power supply.sch" 50
-F2 "B+" O R 3300 3250 50 
-F3 "fl1" O R 3300 3350 50 
-F4 "fl2" O R 3300 3450 50 
-F5 "fr1" O R 3300 3550 50 
-F6 "fr2" O R 3300 3650 50 
-F7 "meter_pwr" O R 3300 3800 50 
-F8 "meter_gnd" O R 3300 3900 50 
-$EndSheet
 $Sheet
 S 4000 3050 1200 450 
 U 5F1F04D2
@@ -81,4 +68,27 @@ Wire Wire Line
 	3750 4150 3750 3650
 Wire Wire Line
 	3750 3650 3300 3650
+$Sheet
+S 2750 5100 700  300 
+U 60AEF536
+F0 "vfd" 50
+F1 "vfd.sch" 50
+$EndSheet
+$Sheet
+S 2750 4550 700  300 
+U 60B94563
+F0 "soft start" 50
+F1 "softstart.sch" 50
+$EndSheet
+$Sheet
+S 2750 3150 550  900 
+U 5F1E3F4D
+F0 "Sheet5F1E3F4C" 50
+F1 "power supply.sch" 50
+F2 "B+" O R 3300 3250 50 
+F3 "fl1" O R 3300 3350 50 
+F4 "fl2" O R 3300 3450 50 
+F5 "fr1" O R 3300 3550 50 
+F6 "fr2" O R 3300 3650 50 
+$EndSheet
 $EndSCHEMATC

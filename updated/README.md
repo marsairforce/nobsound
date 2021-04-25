@@ -190,3 +190,8 @@ It felt a little too much high end now. It is good that it feels more sparkly. L
 * Added a 330pF 400V bypass cap onto the plate of the preamp. Hoping this helps tame the higher frequencies a bit.
 
 Ok. back together now it sounds better bass response and less of that too much fizzy it was.
+
+## 2021-04-25 (v2.5)
+
+* Add a soft standby switch - A RC time delay, Schmitt trigger to drive a MOSFET to engage the high voltage to the tubes after they had time to warm up.
+* A buffer circuit to drive the VFD to remove some annoying audio bleedover.

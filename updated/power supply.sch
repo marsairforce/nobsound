@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 4
+Sheet 2 6
 Title "Nobsound Tube Amplifier Power Supply"
 Date "2020-07-20"
 Rev "1"
@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L local:PwrTxfmr T2
+L nobsound-audio-amplifier-rescue:PwrTxfmr-local-nobsound-audio-amplifier-rescue T2
 U 1 1 5F15D5D5
 P 5300 4100
 F 0 "T2" H 5300 4925 50  0000 C CNN
@@ -25,7 +25,7 @@ F 3 "" H 5550 4750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L local:SW_SPST S1
+L nobsound-audio-amplifier-rescue:SW_SPST-local-nobsound-audio-amplifier-rescue S1
 U 1 1 5F164E42
 P 4600 3800
 F 0 "S1" H 4600 4047 60  0000 C CNN
@@ -36,7 +36,7 @@ F 3 "" H 4500 3750 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L nobsound-audio-amplifier-rescue:Conn_IEC_Power-local J1
+L nobsound-audio-amplifier-rescue:Conn_IEC_Power-local-nobsound-audio-amplifier-rescue J1
 U 1 1 5F1757DE
 P 3800 3900
 F 0 "J1" H 3681 4225 50  0000 C CNN
@@ -106,7 +106,7 @@ Wire Wire Line
 Wire Wire Line
 	5600 3700 5800 3700
 $Comp
-L nobsound-audio-amplifier-rescue:L_Core_Ferrite-Device L1
+L nobsound-audio-amplifier-rescue:L_Core_Ferrite-Device-nobsound-audio-amplifier-rescue L1
 U 1 1 5F187D89
 P 7300 3700
 F 0 "L1" V 7525 3700 50  0000 C CNN
@@ -119,7 +119,7 @@ $EndComp
 Wire Wire Line
 	6850 3700 7150 3700
 $Comp
-L nobsound-audio-amplifier-rescue:CP-Device C6
+L nobsound-audio-amplifier-rescue:CP-Device-nobsound-audio-amplifier-rescue C6
 U 1 1 5F18A643
 P 6850 3900
 AR Path="/5F18A643" Ref="C6"  Part="1" 
@@ -146,7 +146,7 @@ F 3 "~" H 6850 4050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L nobsound-audio-amplifier-rescue:CP-Device C7
+L nobsound-audio-amplifier-rescue:CP-Device-nobsound-audio-amplifier-rescue C7
 U 1 1 5F1901A9
 P 7650 3850
 AR Path="/5F1901A9" Ref="C7"  Part="1" 
@@ -341,84 +341,8 @@ F 3 "~" H 8150 4000 50  0001 C CNN
 	1    8150 4000
 	1    0    0    -1  
 $EndComp
-$Comp
-L nobsound-audio-amplifier-rescue:CP-Device C13
-U 1 1 5F4FA3D7
-P 7500 5100
-AR Path="/5F4FA3D7" Ref="C13"  Part="1" 
-AR Path="/5F1E3F4D/5F4FA3D7" Ref="C13"  Part="1" 
-F 0 "C13" H 7618 5146 50  0000 L CNN
-F 1 "CP" H 7618 5055 50  0000 L CNN
-F 2 "" H 7538 4950 50  0001 C CNN
-F 3 "~" H 7500 5100 50  0001 C CNN
-	1    7500 5100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7100 4600 7100 4650
-Wire Wire Line
-	6800 4950 6750 4950
-Wire Wire Line
-	7400 4950 7500 4950
-Connection ~ 7500 4950
-Wire Wire Line
-	7500 5400 7500 5250
-$Comp
-L Device:D_Bridge_+AA- D1
-U 1 1 5F4F6AF1
-P 7100 4950
-F 0 "D1" H 7300 5250 50  0000 L CNN
-F 1 "D_Bridge_+AA-" H 7300 5150 50  0000 L CNN
-F 2 "" H 7100 4950 50  0001 C CNN
-F 3 "~" H 7100 4950 50  0001 C CNN
-	1    7100 4950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6750 4950 6750 5400
-Text Label 7100 4600 0    50   ~ 0
-f1
-Text Label 7100 5300 0    50   ~ 0
-f2
-Wire Wire Line
-	7100 5300 7100 5250
-$Comp
-L power:Earth #PWR?
-U 1 1 5F54C2DF
-P 8750 5350
-F 0 "#PWR?" H 8750 5100 50  0001 C CNN
-F 1 "Earth" H 8750 5200 50  0001 C CNN
-F 2 "" H 8750 5350 50  0001 C CNN
-F 3 "~" H 8750 5350 50  0001 C CNN
-	1    8750 5350
-	1    0    0    -1  
-$EndComp
-$Comp
-L Converter_DCDC:IH0505D PS?
-U 1 1 5F55887B
-P 8250 5050
-F 0 "PS?" H 8250 5417 50  0000 C CNN
-F 1 "IH0505D" H 8250 5326 50  0000 C CNN
-F 2 "Converter_DCDC:Converter_DCDC_XP_POWER-IHxxxxD_THT" H 7200 4800 50  0001 L CNN
-F 3 "https://www.xppower.com/pdfs/SF_IH.pdf" H 9300 4750 50  0001 L CNN
-	1    8250 5050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8750 4950 8650 4950
-Wire Wire Line
-	8750 5050 8650 5050
-Wire Wire Line
-	7500 4950 7850 4950
-Wire Wire Line
-	7850 5150 7850 5400
-Wire Wire Line
-	6750 5400 7500 5400
-Connection ~ 7500 5400
-Wire Wire Line
-	7500 5400 7850 5400
 Text Notes 8050 3500 0    50   ~ 0
-364V
+390V
 Text HLabel 8300 3700 2    50   Output ~ 0
 B+
 NoConn ~ 5600 4100
@@ -431,10 +355,4 @@ Text HLabel 5600 4700 2    50   Output ~ 0
 fr1
 Text HLabel 5600 4800 2    50   Output ~ 0
 fr2
-Wire Wire Line
-	8750 5050 8750 5350
-Text HLabel 8750 4950 2    50   Output ~ 0
-meter_pwr
-Text HLabel 8750 5050 2    50   Output ~ 0
-meter_gnd
 $EndSCHEMATC
