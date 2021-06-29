@@ -1258,6 +1258,6 @@ Wire Wire Line
 	3800 3700 4350 3700
 Text Notes 850  4350 0    50   ~ 0
 We can not reference this ground to the chassis ground.\nBecause ther 6.3V winding on the power transformer has some relative voltage offset to the actual ground, that we get from another winding.\nI guess I should have used another recom isolated supply here.
-Text Notes 9400 5650 0    50   ~ 0
-This was originally 100K\nBut It was getting all hot  \n390V / 100K = 4mA, but that is still 1.56 watts, at 390V right. We had a 1/8th watt resistor in there.\nwith 1M, this is 0.16 watts.\n
+Text Notes 9500 5750 0    50   ~ 0
+This was originally 100K\nBut It was getting all hot  \n390V / 100K = 4mA, \nbut that is still 1.56 watts, at 390V right. \nWe had a 1/8th watt resistor in there.\n\nWith 1M, this is 0.16 watts.\n
 $EndSCHEMATC

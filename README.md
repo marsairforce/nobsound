@@ -61,3 +61,21 @@ It does not look as cool without the bunches of interestingly shaped tubes, but 
 2020-07-24:  I went ahead and ordered all around new electrolytic capacitors from Digikey. I wanted some connectors for playing with Amateur radio stuff, and needed to pad an order to > $100. Waiting over the weekend for the parts to arrive.
 
 2020-07-27: The parts arrived. Installed the new capacitors and re-assembled the amplifier.
+
+## V3 Design
+
+After all that work to put in the sensible auto standby startup circuit, the tubes were still sparking. Even after they were warm. I changed out the tubes. Still having crackling. Even on shutdown.
+
+So there is something horribly wrong here.
+
+It bothers me we have 3 terrible ad-hoc 5V power supplies too. Why do we have that nasty ground loop current draw problem anyway?
+
+Take apart the amp. Gut it completely. Remove the turret board and the tube sockets.
+
+AHA!!! The fucking transformer has center tapped filament supplies! And the center tap is going to ground.  Well that makes sense now why I could not attach a full bridge rectifier with ground reference here. Dammit. How come I didn't see those center tap wires before then?  They are black and cut short and twisted under everything to a ground lug under the standoff to the turret board. I guess I never took this all the way apart before. My schematic did not have the filament center taps on them too. So I was working with incomplete information before.
+
+Doh.
+
+Ok. So this time, going to change the tube sockets. These terrible Chinesium porcelean sockets are likely terrible for the tubes, cracking the pins or not even giving them a good connection. Of course I only have 2 more in stock. I need 4 here. Have to go order them.
+
+Maybe at this point I will design a proper power supply board, for the capacitors and diodes I have. Since I last played with this I have som enice 1KV 1A SMA diodes. and also some nice 400V 8A DPAK diodes. These can be the bridge rectifier for the electronics. 

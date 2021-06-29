@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 6
+Sheet 6 6
 Title "Nobsound Tube Amplifier Power Supply"
 Date "2020-07-20"
 Rev "1"
@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L nobsound-audio-amplifier-rescue:PwrTxfmr-local-nobsound-audio-amplifier-rescue T2
+L nobsound-audio-amplifier-rescue:PwrTxfmr-local-nobsound-audio-amplifier-rescue-nobsound-audio-amplifier-rescue T2
 U 1 1 5F15D5D5
 P 5300 4100
 F 0 "T2" H 5300 4925 50  0000 C CNN
@@ -25,7 +25,7 @@ F 3 "" H 5550 4750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L nobsound-audio-amplifier-rescue:SW_SPST-local-nobsound-audio-amplifier-rescue S1
+L nobsound-audio-amplifier-rescue:SW_SPST-local-nobsound-audio-amplifier-rescue-nobsound-audio-amplifier-rescue S1
 U 1 1 5F164E42
 P 4600 3800
 F 0 "S1" H 4600 4047 60  0000 C CNN
@@ -36,7 +36,7 @@ F 3 "" H 4500 3750 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L nobsound-audio-amplifier-rescue:Conn_IEC_Power-local-nobsound-audio-amplifier-rescue J1
+L nobsound-audio-amplifier-rescue:Conn_IEC_Power-local-nobsound-audio-amplifier-rescue-nobsound-audio-amplifier-rescue J1
 U 1 1 5F1757DE
 P 3800 3900
 F 0 "J1" H 3681 4225 50  0000 C CNN
@@ -106,7 +106,7 @@ Wire Wire Line
 Wire Wire Line
 	5600 3700 5800 3700
 $Comp
-L nobsound-audio-amplifier-rescue:L_Core_Ferrite-Device-nobsound-audio-amplifier-rescue L1
+L nobsound-audio-amplifier-rescue:L_Core_Ferrite-Device-nobsound-audio-amplifier-rescue-nobsound-audio-amplifier-rescue L1
 U 1 1 5F187D89
 P 7300 3700
 F 0 "L1" V 7525 3700 50  0000 C CNN
@@ -119,7 +119,7 @@ $EndComp
 Wire Wire Line
 	6850 3700 7150 3700
 $Comp
-L nobsound-audio-amplifier-rescue:CP-Device-nobsound-audio-amplifier-rescue C6
+L nobsound-audio-amplifier-rescue:CP-Device-nobsound-audio-amplifier-rescue-nobsound-audio-amplifier-rescue C6
 U 1 1 5F18A643
 P 6850 3900
 AR Path="/5F18A643" Ref="C6"  Part="1" 
@@ -146,7 +146,7 @@ F 3 "~" H 6850 4050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L nobsound-audio-amplifier-rescue:CP-Device-nobsound-audio-amplifier-rescue C7
+L nobsound-audio-amplifier-rescue:CP-Device-nobsound-audio-amplifier-rescue-nobsound-audio-amplifier-rescue C7
 U 1 1 5F1901A9
 P 7650 3850
 AR Path="/5F1901A9" Ref="C7"  Part="1" 
@@ -355,4 +355,8 @@ Text HLabel 5600 4700 2    50   Output ~ 0
 fr1
 Text HLabel 5600 4800 2    50   Output ~ 0
 fr2
+Text Notes 5850 5050 0    50   ~ 0
+Unloaded voltage: 7.34V\nI of 4 tubes: 2.34A\nLoaded voltage: 6.97V\nso about 16 W 
+Text Notes 3300 5300 0    50   ~ 0
+Just powering filaments:\nInput 120V, 0.1A  (12W)\n* measured with fluke clamp meter, \n  not likely accurate, we can't have less power in than out
 $EndSCHEMATC

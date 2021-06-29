@@ -193,5 +193,30 @@ Ok. back together now it sounds better bass response and less of that too much f
 
 ## 2021-04-25 (v2.5)
 
+I replaced the EL84 tubes with some new Tungsol tubes. But now I was getting arcing when the tubes were cold.
+
 * Add a soft standby switch - A RC time delay, Schmitt trigger to drive a MOSFET to engage the high voltage to the tubes after they had time to warm up.
 * A buffer circuit to drive the VFD to remove some annoying audio bleedover.
+
+I was still getting tube arcing though. These were new tubes. Try some other tubes. Nope still getting arcing.
+
+Measure the voltage across teh tubes. It is way too high. around 390.
+
+Also measure the voltage across the filaments. It is about 6.9V. This is also too high, more than 10% out of spec.
+
+Rip apart the entire amplifier out of anger. The main power transformer is just "too hot".
+
+Discover the filament lines were center tapped. Oh. So that is why I have not been able to add rectifiers to this. Makes sense now. I was fighting the ground reference there in the transformer.  Fucking hell.
+
+Also pissed off at these shit ceramic tube sockets. I think these things are cracking my tubes and causing them to be dead after resocketing them a couple times, as I do for testing. I lost 2 new preamp tubes recently for no reason.
+
+## 2021-05-15
+
+* Order new Belton tube sockets. Install them onto chassis.
+* Disconnect the ground reference on the filament windings.
+* Use one filament winding to power the bridge rectifier and 5V regulators I have in there for the 5V things, like the display, the soft start circuit, the buffer for the display.
+* Experiment with using a full bridge rectifier and [these](https://www.monolithicpower.com/en/mp2307.html) regulators I got from Aliexpress. They say rated up to 3A. I have about 2.34A measured here. Let's try these out.
+Build a full bridge rectifier using [SDURD840](https://www.digikey.ca/en/products/detail/smc-diode-solutions/SDURD840TR/6022668) diodes. It is what I had handy.
+* In actuality, I am only able to deliver about 4v at 0.5A to the tubes from this regulator module. The load of only 1 tube flattens out its output voltage. This is not anywhere near its rated 3A capacity. I guess this is exactly what I should expect from something I get off Aliexpress, where it is made entirely from counterfeit parts from China.
+* Try another [random](https://datasheetgo.com/xl6009e1-datasheet-regulator/) Aliexpress buck converter module I have. This one sais "up to 4A" - Also fail. It can't even drive one tube. There is either some silly short circuit protection here, that these topologies of converters can't power tube filaments. Or these are just crap modules.
+

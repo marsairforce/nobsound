@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L nobsound-audio-amplifier-rescue:AudioTxfmr-local-nobsound-audio-amplifier-rescue T?
+L nobsound-audio-amplifier-rescue:AudioTxfmr-local-nobsound-audio-amplifier-rescue-nobsound-audio-amplifier-rescue T?
 U 1 1 5F1FED34
 P 9700 5950
 AR Path="/5F1FED34" Ref="T?"  Part="1" 
@@ -29,7 +29,7 @@ $EndComp
 Wire Wire Line
 	9400 5650 9250 5650
 $Comp
-L nobsound-audio-amplifier-rescue:CP-Device-nobsound-audio-amplifier-rescue C?
+L nobsound-audio-amplifier-rescue:CP-Device-nobsound-audio-amplifier-rescue-nobsound-audio-amplifier-rescue C?
 U 1 1 5F1FED3C
 P 6650 5550
 AR Path="/5F1FED3C" Ref="C?"  Part="1" 
@@ -206,7 +206,7 @@ F 3 "~" H 7200 9050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L nobsound-audio-amplifier-rescue:CP-Device-nobsound-audio-amplifier-rescue C?
+L nobsound-audio-amplifier-rescue:CP-Device-nobsound-audio-amplifier-rescue-nobsound-audio-amplifier-rescue C?
 U 1 1 5F1FEDAC
 P 7550 9050
 AR Path="/5F1FEDAC" Ref="C?"  Part="1" 
@@ -312,7 +312,7 @@ Wire Wire Line
 Wire Wire Line
 	9400 5850 9400 6200
 $Comp
-L nobsound-audio-amplifier-rescue:CP-Device-nobsound-audio-amplifier-rescue C?
+L nobsound-audio-amplifier-rescue:CP-Device-nobsound-audio-amplifier-rescue-nobsound-audio-amplifier-rescue C?
 U 1 1 5F1FEDF9
 P 9850 7650
 AR Path="/5F1FEDF9" Ref="C?"  Part="1" 
@@ -354,7 +354,7 @@ Connection ~ 6000 5400
 Wire Wire Line
 	6000 5400 5900 5400
 $Comp
-L nobsound-audio-amplifier-rescue:EL84-local-nobsound-audio-amplifier-rescue V3
+L nobsound-audio-amplifier-rescue:EL84-local-nobsound-audio-amplifier-rescue-nobsound-audio-amplifier-rescue V3
 U 1 1 5F1E5866
 P 9400 6650
 F 0 "V3" H 9708 6646 50  0000 L CNN
@@ -366,7 +366,7 @@ F 3 "" H 9420 6550 50  0001 C CNN
 $EndComp
 Connection ~ 9400 6200
 $Comp
-L nobsound-audio-amplifier-rescue:12AX7-local-nobsound-audio-amplifier-rescue V2
+L nobsound-audio-amplifier-rescue:12AX7-local-nobsound-audio-amplifier-rescue-nobsound-audio-amplifier-rescue V2
 U 1 1 5F1EB7D2
 P 7150 8000
 AR Path="/5F1EB7D2" Ref="V2"  Part="1" 
@@ -381,7 +381,7 @@ $EndComp
 Wire Wire Line
 	6650 7550 7150 7550
 $Comp
-L nobsound-audio-amplifier-rescue:12AX7-local-nobsound-audio-amplifier-rescue V2
+L nobsound-audio-amplifier-rescue:12AX7-local-nobsound-audio-amplifier-rescue-nobsound-audio-amplifier-rescue V2
 U 2 1 5F1F6427
 P 7150 6650
 AR Path="/5F1F6427" Ref="V2"  Part="2" 
@@ -397,7 +397,7 @@ Connection ~ 7150 7550
 Wire Wire Line
 	7150 7550 7400 7550
 $Comp
-L nobsound-audio-amplifier-rescue:R_POT_Dual_Separate-Device-nobsound-audio-amplifier-rescue RV1
+L nobsound-audio-amplifier-rescue:R_POT_Dual_Separate-Device-nobsound-audio-amplifier-rescue-nobsound-audio-amplifier-rescue RV1
 U 1 1 5F23DDB3
 P 5250 8050
 F 0 "RV1" H 5180 8096 50  0000 R CNN
@@ -520,7 +520,7 @@ F 3 "~" H 25450 3200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L nobsound-audio-amplifier-rescue:R_Potentiometer-Device-nobsound-audio-amplifier-rescue RV?
+L nobsound-audio-amplifier-rescue:R_Potentiometer-Device-nobsound-audio-amplifier-rescue-nobsound-audio-amplifier-rescue RV?
 U 1 1 5F823B94
 P 25750 4150
 AR Path="/5F823B94" Ref="RV?"  Part="1" 

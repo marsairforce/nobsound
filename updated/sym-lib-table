@@ -1,3 +1,5 @@
 (sym_lib_table
   (lib (name nobsound-audio-amplifier-rescue)(type Legacy)(uri "${KIPRJMOD}/nobsound audio amplifier-rescue.lib")(options "")(descr ""))
+  (lib (name local)(type Legacy)(uri ${KIPRJMOD}/local.lib)(options "")(descr ""))
+  (lib (name "power supply-cache")(type Legacy)(uri "${KIPRJMOD}/power supply-cache.lib")(options "")(descr ""))
 )

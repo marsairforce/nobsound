@@ -91,7 +91,7 @@ F 3 "~" H 1300 1200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L nobsound-audio-amplifier-rescue:CP-Device-nobsound-audio-amplifier-rescue C?
+L nobsound-audio-amplifier-rescue:CP-Device-nobsound-audio-amplifier-rescue-nobsound-audio-amplifier-rescue C?
 U 1 1 60AF9688
 P 1700 1350
 AR Path="/60AF9688" Ref="C?"  Part="1" 
@@ -105,7 +105,7 @@ F 3 "~" H 1700 1350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L nobsound-audio-amplifier-rescue:CP-Device-nobsound-audio-amplifier-rescue C?
+L nobsound-audio-amplifier-rescue:CP-Device-nobsound-audio-amplifier-rescue-nobsound-audio-amplifier-rescue C?
 U 1 1 60B90348
 P 1800 3500
 AR Path="/60B90348" Ref="C?"  Part="1" 
